@@ -1,6 +1,7 @@
 ﻿using CountersPlus.ConfigModels;
 using CountersPlus.Counters.Interfaces;
 using TMPro;
+using UnityEngine;
 
 namespace CountersPlus.Counters
 {
@@ -37,6 +38,8 @@ namespace CountersPlus.Counters
                 float percentage = (float)goodCuts / allCuts * 100.0f;
                 counter.text += $" - {percentage.ToString($"F{Settings.DecimalPrecision}")}%";
             }
+
+            counter.color = Settings.CustomNoteColors ? Settings.GetNoteColorFromNote(((double)goodCuts / allCuts) * 100) : Color.white;
         }
     }
 }
