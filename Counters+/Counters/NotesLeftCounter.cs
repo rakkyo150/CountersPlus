@@ -15,7 +15,7 @@ namespace CountersPlus.Counters
 
         private int notesLeft = 0;
         private TMP_Text counter;
-        private int finishNotes = 0;
+        private int allNotes = 0;
 
         public override void CounterInit()
         {
@@ -41,8 +41,8 @@ namespace CountersPlus.Counters
                 counter.text = $"Notes Remaining: {notesLeft}";
                 counter.fontSize = 2;
             }
-
-            counter.color = Settings.CustomLeftColors?Settings.Left7Color:Color.white;
+            allNotes = notesLeft;
+            counter.color = Settings.CustomLeftColors ? Settings.Left1Color : Color.white;
         }
 
         public void OnNoteCut(NoteData data, NoteCutInfo info)
@@ -69,7 +69,7 @@ namespace CountersPlus.Counters
             if (Settings.LabelAboveCount) counter.text = notesLeft.ToString();
             else counter.text = $"Notes Remaining: {notesLeft}";
 
-            counter.color = Settings.CustomLeftColors ? Settings.GetLeftColorFromLeft((notesLeft / finishNotes)*100) : Color.white;
+            counter.color = Settings.CustomLeftColors ? Settings.GetLeftColorFromLeft(((double)notesLeft / allNotes) * 100) : Color.white;
         }
     }
 }

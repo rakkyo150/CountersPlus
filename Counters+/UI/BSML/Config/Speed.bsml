@@ -1,6 +1,6 @@
 ﻿<vertical spacing='1' horizontal-fit='PreferredSize'>
-  <list-setting text='Percentage Precision' apply-on-change='true' value='DecimalPrecision' options='DecimalPrecisions' hover-hint='How precise should the precentage be?'/>
-  <dropdown-list-setting text='Mode' apply-on-change='true' value='Mode' options='Modes' formatter='ModeFormat' hover-hint='How should this Counter display data?'/>
+	<list-setting text='Percentage Precision' apply-on-change='true' value='DecimalPrecision' options='DecimalPrecisions' hover-hint='How precise should the precentage be?'/>
+	<dropdown-list-setting text='Mode' apply-on-change='true' value='Mode' options='Modes' formatter='ModeFormat' hover-hint='How should this Counter display data?'/>
 	<checkbox-setting text='Custom  Speed Colors' apply-on-change='true' value='CustomSpeedColors' hover-hint='Colors your Speed Counter.'/>
 	<increment-setting text='Speed1 Threshold' value='Speed1Threshold' apply-on-change='true' increment='0.1'/>
 	<increment-setting text='Speed2 Threshold' value='Speed2Threshold' apply-on-change='true' increment='0.1'/>

@@ -26,25 +26,25 @@ namespace CountersPlus.ConfigModels
         [UIValue(nameof(Note1Threshold))]
         public double Note1Threshold { get; set; } = 100;
         [UIValue(nameof(Note2Threshold))]
-        public double Note2Threshold { get; set; } = 95;
+        public double Note2Threshold { get; set; } = 99.5;
         [UIValue(nameof(Note3Threshold))]
-        public double Note3Threshold { get; set; } = 90;
+        public double Note3Threshold { get; set; } = 99;
         [UIValue(nameof(Note4Threshold))]
-        public double Note4Threshold { get; set; } = 80;
+        public double Note4Threshold { get; set; } = 97;
         [UIValue(nameof(Note5Threshold))]
-        public double Note5Threshold { get; set; } = 70;
+        public double Note5Threshold { get; set; } = 95;
         [UIValue(nameof(Note6Threshold))]
-        public double Note6Threshold { get; set; } = 50;
+        public double Note6Threshold { get; set; } = 90;
 
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Note1Color))]
         public virtual Color Note1Color { get; set; } = Color.magenta;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Note2Color))]
-        public virtual Color Note2Color { get; set; } = Color.red;
+        public virtual Color Note2Color { get; set; } = Color.green;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Note3Color))]
-        public virtual Color Note3Color { get; set; } =Color.blue;
+        public virtual Color Note3Color { get; set; } = Color.blue;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Note4Color))]
         public virtual Color Note4Color { get; set; } = Color.yellow;

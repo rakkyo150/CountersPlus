@@ -1,5 +1,5 @@
 ﻿<vertical spacing='1' horizontal-fit='PreferredSize'>
-  <checkbox-setting text='Label Above Counter' apply-on-change='true' value='LabelAboveCount' hover-hint='Put the label above the number, similar to a usual Counters+ counter.'/>
+	<checkbox-setting text='Label Above Counter' apply-on-change='true' value='LabelAboveCount' hover-hint='Put the label above the number, similar to a usual Counters+ counter.'/>
 	<checkbox-setting text='Custom Notes Left Colors' apply-on-change='true' value='CustomLeftColors' hover-hint='Colors your Notes Left Counter.'/>
 	<increment-setting text='Left1 Threshold' max='100' value='Left1Threshold' apply-on-change='true' increment='0.1'/>
 	<increment-setting text='Left2 Threshold' max='100' value='Left2Threshold' apply-on-change='true' increment='0.1'/>
