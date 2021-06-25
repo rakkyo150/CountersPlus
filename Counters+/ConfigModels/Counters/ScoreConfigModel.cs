@@ -25,7 +25,7 @@ namespace CountersPlus.ConfigModels
         [UIValue(nameof(DisplayRank))]
         public virtual bool DisplayRank { get; set; } = true;
         [UIValue(nameof(CustomRankColors))]
-        public virtual bool CustomRankColors { get; set; } = true;
+        public virtual bool CustomRankColors { get; set; } = true;        
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(SSColor))]
         public virtual Color SSColor { get; set; } = Color.cyan;
