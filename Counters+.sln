@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		Counters+\Counters+.csproj.user = Counters+\Counters+.csproj.user
 		README.md = README.md
+		README_EN.md = README_EN.md
+		README_ORIGINAL.md = README_ORIGINAL.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Counters+", "Counters+\Counters+.csproj", "{A5DBF7F3-FE93-4BB1-8023-2DD50DFD3350}"

@@ -1,35 +1,80 @@
-# CountersPlus
-A combination of widely-used counters, all configurable in one Beat Saber mod.
+# CounterPlus改良版
 
-## What is this?
-**Counters+** (also known as CountersPlus) is a powerful UI Enhancement mod for the popular VR rhythm game Beat Saber. It features a variety of different counters that track varying statistics, all bundled into one core system.
+## オリジナルバージョンとの違い
+CutCounter,NoteCounter,NoteLeftCounter,SpeedCounterにおいて、任意の閾値ごとに任意の色を付けることができるようにしました。<br>
+閾値と色のデフォルトは割とざっくり作ったので、それぞれ自分に合ったようにカスタマイズしたほうがいいかもしれません。<br>
 
-Counters+ also boasts a large amount of configuration, all available from a custom made settings menu.
+## 設定項目
+オリジナルバージョンとは異なる部分のみ取り上げるので、ご了承ください。
 
-## Installation
-To install Counters+, simply use a Beat Saber mod manager such as [ModAssistant](https://github.com/Assistant/ModAssistant). This will ensure that any dependencies are installed along with Counters+. If you like to do things manually, download Counters+ from [BeatMods](https://beatmods.com), and drag and drop the containing `Plugins` folder into your Beat Saber directory.
+### CutCounter
+閾値と色は７段階に分けられています。
+|項目|内容|
+|`Custom Cut Colors`|色をつけるかどうか|
+|`SS Threshold`|115からどこまでの範囲か|
+|`S Threshold`|`SS Threshold`からどこまでの範囲か|
+|`A Threshold`|`S Threshold`からどこまでの範囲か|
+|`B Threshold`|`A Threshold`からどこまでの範囲か|
+|`C Threshold`|`B Threshold`からどこまでの範囲か|
+|`D Threshold`|`C Threshold`からどこまでの範囲か|
+|`SS Color`|`SS Threshold`～115における色を選択|
+|`S Color`|`S Threshold`～`SS Threshold`における色を選択|
+|`A Color`|`A Threshold`～`S Threshold`における色を選択|
+|`B Color`|`B Threshold`～`A Threshold`における色を選択|
+|`C Color`|`C Threshold`～`B Threshold`における色を選択|
+|`D Color`|`D Threshold`～`C Threshold`における色を選択|
+|`E Color`|`D Threshold`以下における色を選択|
 
-If you want to get access to any potential Hotfix or Prelease/Beta builds Counters+ has to offer, simply watch the repository, and grab the latest release in the [Releases page](https://github.com/Caeden117/CountersPlus/releases).
+### NoteCounter
+閾値と色は７段階に分けられています。
+|項目|内容|
+|`Custom Note Colors`|色をつけるかどうか|
+|`Note1 Threshold`|115からどこまでの範囲か|
+|`Note2 Threshold`|`Note1 Threshold`からどこまでの範囲か|
+|`Note3 Threshold`|`Note2 Threshold`からどこまでの範囲か|
+|`Note4 Threshold`|`Note3 Threshold`からどこまでの範囲か|
+|`Note5 Threshold`|`Note4 Threshold`からどこまでの範囲か|
+|`Note6 Threshold`|`Note5 Threshold`からどこまでの範囲か|
+|`Note1 Color`|`Note1 Threshold`～115における色を選択|
+|`Note2 Color`|`Note2 Threshold`～`Note1 Threshold`における色を選択|
+|`Note3 Color`|`Note3 Threshold`～`Note2 Threshold`における色を選択|
+|`Note4 Color`|`Note4 Threshold`～`Note3 Threshold`における色を選択|
+|`Note5 Color`|`Note5 Threshold`～`Note4 Threshold`における色を選択|
+|`Note6 Color`|`Note6 Threshold`～`Note5 Threshold`における色を選択|
+|`Note7 Color`|`Note6 Threshold`以下における色を選択|
 
-## Available Counters
-|Counter|Version Added|Description|
-|-|-|-|
-|***Progress***|`1.0.0`|Overwrites the in-game counter with the original we all know and love!|
-|***Score***|`1.0.0`|Also overwrites with the original Score counter!|
-|***Missed***|`1.0.0`|Counts missed notes in a song.|
-|***Notes***|`1.0.0`|Notes hit over notes in total. Now in percentages!|
-|***Speed***|`1.1.0`|*"Speed, motherfucker, do you speak it?"* Displays how fast your arms are swinging!|
-|***Cut***|`1.1.0`|Displays the average cut score (Anywhere from 0-110), so you can see how well you are hitting those notes!|
-|***Spinometer***|`1.4.1`|Displays angular velocity of your sabers. Can you beat 3600 degress per second?|
-|***Personal Best***|`1.5.5`|Displays your high score in a map, and changes color depending on how close you are to beating it!|
-|***Notes Left***|`1.5.8`|Notes Left counter has now been merged into Counters+. It's pretty self explanatory.|
-|***Fail***|`1.5.8`|Display how many times you've failed across every song, or how many times you've restarted the same song!|
+### NoteLeftCounter
+閾値と色は７段階に分けられています。
+|項目|内容|
+|`Custom Notes Left Colors`|色をつけるかどうか|
+|`Left1 Threshold`|115からどこまでの範囲か|
+|`Left2 Threshold`|`Left1 Threshold`からどこまでの範囲か|
+|`Left3 Threshold`|`Left2 Threshold`からどこまでの範囲か|
+|`Left4 Threshold`|`Left3 Threshold`からどこまでの範囲か|
+|`Left5 Threshold`|`Left4 Threshold`からどこまでの範囲か|
+|`Left6 Threshold`|`Left5 Threshold`からどこまでの範囲か|
+|`Left1 Color`|`Left1 Threshold`～115における色を選択|
+|`Left2 Color`|`Left2 Threshold`～`Left1 Threshold`における色を選択|
+|`Left3 Color`|`Left3 Threshold`～`Left2 Threshold`における色を選択|
+|`Left4 Color`|`Left4 Threshold`～`Left3 Threshold`における色を選択|
+|`Left5 Color`|`Left5 Threshold`～`Left4 Threshold`における色を選択|
+|`Left6 Color`|`Left6 Threshold`～`Left5 Threshold`における色を選択|
+|`Left7 Color`|`Left6 Threshold`以下における色を選択|
 
-### Custom Counters
-Counters+ also supports the addition of Custom Counters. Other mods can input their counters into the Counters+ system and allow the user to edit the position through the Counters+ UI.
-
-#### Want to make some?
-See the [Counters+ Wiki page on developing your own Custom Counters](https://github.com/Caeden117/CountersPlus/wiki/For-Developers).
-
-## Configuration and Documentation
-If you'd like to see documentation on the various Counters and settings Counters+ has to offer, please visit the [Counters+ Wiki](https://github.com/Caeden117/CountersPlus/wiki).
+## SpeedCounter
+閾値と色は７段階に分けられています。
+|項目|内容|
+|`Custom Speed Colors`|色をつけるかどうか|
+|`Speed1 Threshold`|115からどこまでの範囲か|
+|`Speed2 Threshold`|`Speed1 Threshold`からどこまでの範囲か|
+|`Speed3 Threshold`|`Speed2 Threshold`からどこまでの範囲か|
+|`Speed4 Threshold`|`Speed3 Threshold`からどこまでの範囲か|
+|`Speed5 Threshold`|`Speed4 Threshold`からどこまでの範囲か|
+|`Speed6 Threshold`|`Speed5 Threshold`からどこまでの範囲か|
+|`Speed1 Color`|`Speed1 Threshold`～115における色を選択|
+|`Speed2 Color`|`Speed2 Threshold`～`Speed1 Threshold`における色を選択|
+|`Speed3 Color`|`Speed3 Threshold`～`Speed2 Threshold`における色を選択|
+|`Speed4 Color`|`Speed4 Threshold`～`Speed3 Threshold`における色を選択|
+|`Speed5 Color`|`Speed5 Threshold`～`Speed4 Threshold`における色を選択|
+|`Speed6 Color`|`Speed6 Threshold`～`Speed5 Threshold`における色を選択|
+|`Speed7 Color`|`Speed6 Threshold`以下における色を選択|
