@@ -33,17 +33,17 @@ namespace CountersPlus.ConfigModels
         public virtual bool CustomSpeedColors { get; set; } = true;
 
         [UIValue(nameof(Speed1Threshold))]
-        public double Speed1Threshold { get; set; } = 250;
+        public double Speed1Threshold { get; set; } = 90;
         [UIValue(nameof(Speed2Threshold))]
-        public double Speed2Threshold { get; set; } = 225;
+        public double Speed2Threshold { get; set; } = 75;
         [UIValue(nameof(Speed3Threshold))]
-        public double Speed3Threshold { get; set; } = 200;
+        public double Speed3Threshold { get; set; } = 60;
         [UIValue(nameof(Speed4Threshold))]
-        public double Speed4Threshold { get; set; } = 175;
+        public double Speed4Threshold { get; set; } = 45;
         [UIValue(nameof(Speed5Threshold))]
-        public double Speed5Threshold { get; set; } = 150;
+        public double Speed5Threshold { get; set; } = 30;
         [UIValue(nameof(Speed6Threshold))]
-        public double Speed6Threshold { get; set; } = 100;
+        public double Speed6Threshold { get; set; } = 15;
 
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Speed1Color))]
