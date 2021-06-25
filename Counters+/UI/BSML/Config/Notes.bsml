@@ -1,4 +1,18 @@
 ﻿<vertical spacing='1' horizontal-fit='PreferredSize'>
   <checkbox-setting text='Show Percentage' apply-on-change='true' value='ShowPercentage' hover-hint='Toggles the percentage of notes hit over total notes.'/>
   <list-setting text='Percentage Precision' apply-on-change='true' value='DecimalPrecision' options='DecimalPrecisions' hover-hint='How precise should the precentage be?'/>
+	<checkbox-setting text='Custom Note Colors' apply-on-change='true' value='CustomNoteColors' hover-hint='Colors your Note Counter.'/>
+	<increment-setting text='Note1 Threshold' color='Note1Color' max='100' value='Left1Threshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='Note2 Threshold' color='Note2Color' max='Note1Threshold' value='Note2Threshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='Note3 Threshold' color='Note3Color' max='Note2Threshold' value='Note3Threshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='Note4 Threshold' color='Note4Color' max='Note3Threshold' value='Note4Threshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='Note5 Threshold' color='Note5Color' max='Note4Threshold' value='Note5Threshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='Note6 Threshold' color='Note6Color' max='Note5Threshold' value='Note6Threshold' apply-on-change='true' increment='0.1'/>
+	<color-setting text='Note1 Color' apply-on-change='true' value='Note1Color'/>
+	<color-setting text='Note2 Color' apply-on-change='true' value='Note2Color'/>
+	<color-setting text='Note3 Color' apply-on-change='true' value='Note3Color'/>
+	<color-setting text='Note4 Color' apply-on-change='true' value='Note4Color'/>
+	<color-setting text='Note5 Color' apply-on-change='true' value='Note5Color'/>
+	<color-setting text='Note6 Color' apply-on-change='true' value='Note6Color'/>
+	<color-setting text='Note7 Color' apply-on-change='true' value='Note7Color'/>
 </vertical>

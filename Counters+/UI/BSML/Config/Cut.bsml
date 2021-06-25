@@ -9,12 +9,11 @@
 	<increment-setting text='B Threshold' color='BColor' max='AThreshold' value='BThreshold' apply-on-change='true' increment='0.1'/>
 	<increment-setting text='C Threshold' color='CColor' max='BThreshold' value='CThreshold' apply-on-change='true' increment='0.1'/>
 	<increment-setting text='D Threshold' color='DColor' max='CThreshold' value='DThreshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='E Threshold' color='EColor' max='DThreshold' value='EThreshold' apply-on-change='true' increment='0.1'/>
-	<color-setting text='SS Color' apply-on-change='true' value='SSColor' hover-hint='Change the rank color for the SS rank.'/>
-	<color-setting text='S Color' apply-on-change='true' value='SColor' hover-hint='Change the rank color for the S rank.'/>
-	<color-setting text='A Color' apply-on-change='true' value='AColor' hover-hint='Change the rank color for the A rank.'/>
-	<color-setting text='B Color' apply-on-change='true' value='BColor' hover-hint='Change the rank color for the B rank.'/>
-	<color-setting text='C Color' apply-on-change='true' value='CColor' hover-hint='Change the rank color for the C rank.'/>
-	<color-setting text='D Color' apply-on-change='true' value='DColor' hover-hint='Change the rank color for the D rank.'/>
-	<color-setting text='E Color' apply-on-change='true' value='EColor' hover-hint='Change the rank color for the E rank.'/>
+	<color-setting text='SS Color' apply-on-change='true' value='SSColor'/>
+	<color-setting text='S Color' apply-on-change='true' value='SColor'/>
+	<color-setting text='A Color' apply-on-change='true' value='AColor'/>
+	<color-setting text='B Color' apply-on-change='true' value='BColor'/>
+	<color-setting text='C Color' apply-on-change='true' value='CColor'/>
+	<color-setting text='D Color' apply-on-change='true' value='DColor'/>
+	<color-setting text='E Color' apply-on-change='true' value='EColor'/>
 </vertical>

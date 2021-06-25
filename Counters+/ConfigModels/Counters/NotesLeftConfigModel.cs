@@ -32,8 +32,6 @@ namespace CountersPlus.ConfigModels
         public double Left5Threshold { get; set; } = 25;
         [UIValue(nameof(Left6Threshold))]
         public double Left6Threshold { get; set; } = 10;
-        [UIValue(nameof(Left7Threshold))]
-        public double Left7Threshold { get; set; } = 0;
 
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Left1Color))]

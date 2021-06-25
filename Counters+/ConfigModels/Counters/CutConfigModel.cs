@@ -35,8 +35,6 @@ namespace CountersPlus.ConfigModels
         public double CThreshold { get; set; } = 100;
         [UIValue(nameof(DThreshold))]
         public double DThreshold { get; set; } = 90;
-        [UIValue(nameof(EThreshold))]
-        public double EThreshold { get; set; } = 80;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(SSColor))]
         public virtual Color SSColor { get; set; } = Color.magenta;
