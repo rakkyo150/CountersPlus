@@ -1,9 +1,8 @@
-﻿using BeatSaberMarkupLanguage.MenuButtons;
-using CountersPlus.UI.FlowCoordinators;
-using System;
-using Zenject;
-using HMUI;
+﻿using System;
 using BeatSaberMarkupLanguage;
+using BeatSaberMarkupLanguage.MenuButtons;
+using CountersPlus.UI.FlowCoordinators;
+using Zenject;
 
 namespace CountersPlus.UI
 {

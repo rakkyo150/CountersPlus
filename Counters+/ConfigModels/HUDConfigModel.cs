@@ -1,9 +1,9 @@
-﻿using BeatSaberMarkupLanguage.Attributes;
-using IPA.Config.Stores.Attributes;
-using IPA.Config.Stores.Converters;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using BeatSaberMarkupLanguage.Attributes;
+using IPA.Config.Stores.Attributes;
+using IPA.Config.Stores.Converters;
 using UnityEngine;
 
 namespace CountersPlus.ConfigModels
@@ -11,9 +11,9 @@ namespace CountersPlus.ConfigModels
     public class HUDConfigModel
     {
         public string DisplayName => "HUD Settings";
-        
+
         public HUDCanvas MainCanvasSettings { get; set; } = new HUDCanvas()
-        { 
+        {
             Name = "Main",
             IsMainCanvas = true,
             MatchBaseGameHUDDepth = true

@@ -1,8 +1,8 @@
-﻿using BeatSaberMarkupLanguage.Attributes;
+﻿using System.Linq;
+using BeatSaberMarkupLanguage.Attributes;
 using BeatSaberMarkupLanguage.Components;
 using BeatSaberMarkupLanguage.Parser;
 using HMUI;
-using System.Linq;
 using UnityEngine;
 
 namespace CountersPlus.UI

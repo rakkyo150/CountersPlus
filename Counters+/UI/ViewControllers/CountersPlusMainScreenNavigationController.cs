@@ -1,5 +1,5 @@
-﻿using HMUI;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using HMUI;
 
 namespace CountersPlus.UI.ViewControllers
 {
@@ -13,7 +13,7 @@ namespace CountersPlus.UI.ViewControllers
         public override void __Init(Screen screen, ViewController parentViewController, ContainerViewController containerViewController)
         {
             base.__Init(screen, parentViewController, containerViewController);
-            
+
             foreach (var viewController in viewControllers)
             {
                 viewController.__Init(screen, null, null);
@@ -45,7 +45,7 @@ namespace CountersPlus.UI.ViewControllers
             activeViewController = controller;
 
             viewControllers.Add(controller);
-            
+
             if (screen != null)
             {
                 RefreshActiveViewControllers();

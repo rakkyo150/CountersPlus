@@ -1,8 +1,9 @@
-﻿using CountersPlus.ConfigModels;
+﻿using System.Linq;
+using CountersPlus.ConfigModels;
 using CountersPlus.Counters.Interfaces;
 using CountersPlus.Counters.NoteCountProcessors;
-using System.Linq;
 using TMPro;
+using UnityEngine;
 using Zenject;
 
 namespace CountersPlus.Counters
@@ -14,6 +15,7 @@ namespace CountersPlus.Counters
 
         private int notesLeft = 0;
         private TMP_Text counter;
+        private int allNotes = 0;
 
         public override void CounterInit()
         {
@@ -39,16 +41,26 @@ namespace CountersPlus.Counters
                 counter.text = $"Notes Remaining: {notesLeft}";
                 counter.fontSize = 2;
             }
+            allNotes = notesLeft;
+            counter.color = Settings.CustomLeftColors ? Settings.Left1Color : Color.white;
         }
 
         public void OnNoteCut(NoteData data, NoteCutInfo info)
         {
-            if (data.colorType != ColorType.None && !noteCountProcessor.ShouldIgnoreNote(data)) DecrementCounter();
+            if (data.colorType != ColorType.None && !noteCountProcessor.ShouldIgnoreNote(data))
+            {
+                DecrementCounter();
+                finishNotes++;
+            }
         }
 
         public void OnNoteMiss(NoteData data)
         {
-            if (data.colorType != ColorType.None && !noteCountProcessor.ShouldIgnoreNote(data)) DecrementCounter();
+            if (data.colorType != ColorType.None && !noteCountProcessor.ShouldIgnoreNote(data))
+            {
+                DecrementCounter();
+                finishNotes++;
+            }
         }
 
         private void DecrementCounter()
@@ -56,6 +68,9 @@ namespace CountersPlus.Counters
             --notesLeft;
             if (Settings.LabelAboveCount) counter.text = notesLeft.ToString();
             else counter.text = $"Notes Remaining: {notesLeft}";
+
+            counter.color = Settings.CustomLeftColors ? Settings.GetLeftColorFromLeft(((double)notesLeft / allNotes) * 100) : Color.white;
         }
     }
 }
+

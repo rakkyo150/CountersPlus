@@ -27,12 +27,12 @@ namespace CountersPlus.UI.SettingGroups
         public override int CellToSelect() => 1;
 
         public override CustomListTableData.CustomCellInfo CellInfoForIdx(int idx) => idx switch
-            {
-                0 => new CountersPlusListTableCell(idx, "Add new Canvas", LoadSprite("HUDs.Add")),
-                1 => new CountersPlusListTableCell(idx, "Edit existing Canvases", LoadSprite("HUDs.Manage")),
-                2 => new CountersPlusListTableCell(idx, "Remove a Canvas", LoadSprite("HUDs.Remove")),
-                _ => base.CellInfoForIdx(idx),
-            };
+        {
+            0 => new CountersPlusListTableCell(idx, "Add new Canvas", LoadSprite("HUDs.Add")),
+            1 => new CountersPlusListTableCell(idx, "Edit existing Canvases", LoadSprite("HUDs.Manage")),
+            2 => new CountersPlusListTableCell(idx, "Remove a Canvas", LoadSprite("HUDs.Remove")),
+            _ => base.CellInfoForIdx(idx),
+        };
 
         public override int NumberOfCells() => 3;
 

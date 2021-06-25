@@ -1,8 +1,8 @@
-﻿using BeatSaberMarkupLanguage.Attributes;
-using IPA.Config.Stores.Attributes;
-using System;
-using System.Linq;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using BeatSaberMarkupLanguage.Attributes;
+using IPA.Config.Stores.Attributes;
 
 namespace CountersPlus.ConfigModels
 {
@@ -18,11 +18,11 @@ namespace CountersPlus.ConfigModels
 
         [UIValue(nameof(Enabled))]
         public virtual bool Enabled { get; set; } = false;
-        
+
         [UseConverter]
         [UIValue(nameof(Position))]
         public virtual CounterPositions Position { get; set; } = CounterPositions.BelowCombo;
-        
+
         [UIValue(nameof(Distance))]
         public virtual int Distance { get; set; } = 2;
 

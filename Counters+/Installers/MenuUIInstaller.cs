@@ -1,4 +1,4 @@
-﻿using BeatSaberMarkupLanguage;
+﻿using System;
 using BeatSaberMarkupLanguage.MenuButtons;
 using CountersPlus.Custom;
 using CountersPlus.UI;
@@ -9,7 +9,6 @@ using CountersPlus.UI.ViewControllers.Editing;
 using CountersPlus.Utils;
 using HMUI;
 using SiraUtil;
-using System;
 using UnityEngine;
 using Zenject;
 

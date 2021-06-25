@@ -1,9 +1,9 @@
-﻿using IPA.Loader;
-using IPA.Loader.Features;
-using Newtonsoft.Json.Linq;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using IPA.Loader;
+using IPA.Loader.Features;
+using Newtonsoft.Json.Linq;
 
 namespace CountersPlus.Custom
 {
@@ -18,7 +18,7 @@ namespace CountersPlus.Custom
             {
                 counter = featureData.ToObject<CustomCounter>();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 InvalidMessage = $"Invalid data: {e}";
                 return false;
