@@ -18,6 +18,7 @@ namespace CountersPlus.Counters
         private List<float> lSpeedList = new List<float>();
         private List<float> fastest = new List<float>();
         private TMP_Text averageCounter;
+        private TMP_Text lAverageCounter;
         private TMP_Text fastestCounter;
 
         private float t;
@@ -32,6 +33,10 @@ namespace CountersPlus.Counters
                 case SpeedMode.Average:
                 case SpeedMode.SplitAverage:
                     GenerateBasicText("Average Speed", out averageCounter);
+                    HUDCanvas canvas1 = CanvasUtility.GetCanvasSettingsFromID(Settings.CanvasID);
+                    lAverageCounter = CanvasUtility.CreateTextFromSettings(Settings, new Vector3(-0.6f, -0.4f * (10 / canvas1.PositionScale), 0));
+                    lAverageCounter.text = "0";
+                    lAverageCounter.fontSize = 4;
                     break;
                 case SpeedMode.Top5Sec:
                     GenerateBasicText("Recent Top Speed", out fastestCounter);
@@ -39,6 +44,10 @@ namespace CountersPlus.Counters
                 case SpeedMode.Both:
                 case SpeedMode.SplitBoth:
                     GenerateBasicText("Average Speed", out averageCounter);
+                    HUDCanvas canvas2 = CanvasUtility.GetCanvasSettingsFromID(Settings.CanvasID);
+                    lAverageCounter = CanvasUtility.CreateTextFromSettings(Settings, new Vector3(-0.6f, -0.4f * (10 / canvas2.PositionScale), 0));
+                    lAverageCounter.text = "0";
+                    lAverageCounter.fontSize = 4;
                     var label = CanvasUtility.CreateTextFromSettings(Settings, new Vector3(0, -1, 0));
                     label.fontSize = 3;
                     label.text = "Recent Top Speed";
@@ -64,6 +73,7 @@ namespace CountersPlus.Counters
                 case SpeedMode.Average:
                     rSpeedList.Add((right.bladeSpeed + left.bladeSpeed) / 2f);
                     averageCounter.text = rSpeedList.Average().ToString($"F{precision}");
+                    averageCounter.color = Settings.CustomSpeedColors ? Settings.GetSpeedColorFromSpeed(rSpeedList.Average()) : Color.white;
                     break;
 
                 case SpeedMode.SplitBoth:
@@ -72,7 +82,10 @@ namespace CountersPlus.Counters
                 case SpeedMode.SplitAverage:
                     rSpeedList.Add(right.bladeSpeed);
                     lSpeedList.Add(left.bladeSpeed);
-                    averageCounter.text = $"{lSpeedList.Average().ToString($"F{precision}")} | {rSpeedList.Average().ToString($"F{precision}")}";
+                    lAverageCounter.text = $"{lSpeedList.Average().ToString($"F{precision}")} ";
+                    averageCounter.text = $"| {rSpeedList.Average().ToString($"F{precision}")}";
+                    lAverageCounter.color = Settings.CustomSpeedColors ? Settings.GetSpeedColorFromSpeed(lSpeedList.Average()) : Color.white;
+                    averageCounter.color = Settings.CustomSpeedColors ? Settings.GetSpeedColorFromSpeed(rSpeedList.Average()) : Color.white;
                     break;
             }
         }
@@ -88,6 +101,8 @@ namespace CountersPlus.Counters
                 var top = fastest.Max();
                 fastest.Clear();
                 fastestCounter.text = top.ToString($"F{Settings.DecimalPrecision}");
+
+                fastestCounter.color = Settings.CustomSpeedColors ? Settings.GetSpeedColorFromSpeed(top) : Color.white;
             }
         }
     }
