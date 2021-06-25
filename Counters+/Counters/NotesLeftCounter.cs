@@ -42,19 +42,25 @@ namespace CountersPlus.Counters
                 counter.fontSize = 2;
             }
 
-            counter.color = Settings.Left7Color;
+            counter.color = Settings.CustomLeftColors?Settings.Left7Color:Color.white;
         }
 
         public void OnNoteCut(NoteData data, NoteCutInfo info)
         {
-            if (data.colorType != ColorType.None && !noteCountProcessor.ShouldIgnoreNote(data)) DecrementCounter();
-            finishNotes++;
+            if (data.colorType != ColorType.None && !noteCountProcessor.ShouldIgnoreNote(data))
+            {
+                DecrementCounter();
+                finishNotes++;
+            }
         }
 
         public void OnNoteMiss(NoteData data)
         {
-            if (data.colorType != ColorType.None && !noteCountProcessor.ShouldIgnoreNote(data)) DecrementCounter();
-            finishNotes++;
+            if (data.colorType != ColorType.None && !noteCountProcessor.ShouldIgnoreNote(data))
+            {
+                DecrementCounter();
+                finishNotes++;
+            }
         }
 
         private void DecrementCounter()
@@ -67,3 +73,4 @@ namespace CountersPlus.Counters
         }
     }
 }
+
