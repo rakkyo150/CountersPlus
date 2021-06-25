@@ -39,7 +39,7 @@ namespace CountersPlus.Counters
                 counter.text += $" - {percentage.ToString($"F{Settings.DecimalPrecision}")}%";
             }
 
-            counter.color= Settings.CustomNoteColors ? Settings.GeLeftColorFromLeft((goodCuts / allCuts) * 100) : Color.white;
+            counter.color= Settings.CustomNoteColors ? Settings.GetNoteColorFromNote((goodCuts / allCuts) * 100) : Color.white;
         }
     }
 }

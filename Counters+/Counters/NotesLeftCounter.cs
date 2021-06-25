@@ -63,7 +63,7 @@ namespace CountersPlus.Counters
             if (Settings.LabelAboveCount) counter.text = notesLeft.ToString();
             else counter.text = $"Notes Remaining: {notesLeft}";
 
-            counter.color = Settings.CustomLeftColors ? Settings.GeLeftColorFromLeft((notesLeft / finishNotes)*100) : Color.white;
+            counter.color = Settings.CustomLeftColors ? Settings.GetLeftColorFromLeft((notesLeft / finishNotes)*100) : Color.white;
         }
     }
 }

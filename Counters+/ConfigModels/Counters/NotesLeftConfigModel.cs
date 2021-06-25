@@ -55,7 +55,7 @@ namespace CountersPlus.ConfigModels
         [UIValue(nameof(Left7Color))]
         public virtual Color Left7Color { get; set; } = Color.magenta;
 
-        public Color GeLeftColorFromLeft(double leftRatio)
+        public Color GetLeftColorFromLeft(double leftRatio)
         {
             if (leftRatio >= Left1Threshold) return Left1Color;
             else if (leftRatio >= Left2Threshold) return Left2Color;

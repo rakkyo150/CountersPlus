@@ -3,12 +3,12 @@
   <checkbox-setting text='Separate Cut Values' apply-on-change='true' value='SeparateCutValues' hover-hint='Show separate averages for angle before cut (0-70), angle after cut (0-30) and distance to center (0-15).'/>
   <list-setting text='Average Cut Precision'  apply-on-change='true' value='AveragePrecision' options='DecimalPrecisions' hover-hint='How many decimals should be shown on the average cuts?'/>
 	<checkbox-setting text='Custom Cut Colors' apply-on-change='true' value='CustomCutColors' hover-hint='Colors your Cut Counter.'/>
-	<increment-setting text='SS Threshold' color='SSColor' max='115' value='SSThreshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='S Threshold' color='SColor' max='SSThreshold' value='SThreshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='A Threshold' color='AColor' max='SThreshold' value='AThreshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='B Threshold' color='BColor' max='AThreshold' value='BThreshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='C Threshold' color='CColor' max='BThreshold' value='CThreshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='D Threshold' color='DColor' max='CThreshold' value='DThreshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='SS Threshold' max='115' value='SSThreshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='S Threshold' max='115' value='SThreshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='A Threshold' max='115' value='AThreshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='B Threshold' max='115' value='BThreshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='C Threshold' max='115' value='CThreshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='D Threshold' max='115' value='DThreshold' apply-on-change='true' increment='0.1'/>
 	<color-setting text='SS Color' apply-on-change='true' value='SSColor'/>
 	<color-setting text='S Color' apply-on-change='true' value='SColor'/>
 	<color-setting text='A Color' apply-on-change='true' value='AColor'/>

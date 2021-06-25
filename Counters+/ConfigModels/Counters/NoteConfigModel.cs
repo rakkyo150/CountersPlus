@@ -58,7 +58,7 @@ namespace CountersPlus.ConfigModels
         [UIValue(nameof(Note7Color))]
         public virtual Color Note7Color { get; set; } = Color.red;
 
-        public Color GeLeftColorFromLeft(double noteRatio)
+        public Color GetNoteColorFromNote(double noteRatio)
         {
             if (noteRatio >= Note1Threshold) return Note1Color;
             else if (noteRatio >= Note2Threshold) return Note2Color;

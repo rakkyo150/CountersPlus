@@ -1,12 +1,12 @@
 ﻿<vertical spacing='1' horizontal-fit='PreferredSize'>
   <checkbox-setting text='Label Above Counter' apply-on-change='true' value='LabelAboveCount' hover-hint='Put the label above the number, similar to a usual Counters+ counter.'/>
 	<checkbox-setting text='Custom Notes Left Colors' apply-on-change='true' value='CustomLeftColors' hover-hint='Colors your Notes Left Counter.'/>
-	<increment-setting text='Left1 Threshold' color='Left1Color' max='100' value='Left1Threshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='Left2 Threshold' color='Left2Color' max='Left1Threshold' value='Left2Threshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='Left3 Threshold' color='Left3Color' max='Left2Threshold' value='Left3Threshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='Left4 Threshold' color='Left4Color' max='Left3Threshold' value='Left4Threshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='Left5 Threshold' color='Left5Color' max='Left4Threshold' value='Left5Threshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='Left6 Threshold' color='Left6Color' max='Left5Threshold' value='Left6Threshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='Left1 Threshold' max='100' value='Left1Threshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='Left2 Threshold' max='100' value='Left2Threshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='Left3 Threshold' max='100' value='Left3Threshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='Left4 Threshold' max='100' value='Left4Threshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='Left5 Threshold' max='100' value='Left5Threshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='Left6 Threshold' max='100' value='Left6Threshold' apply-on-change='true' increment='0.1'/>
 	<color-setting text='Left1 Color' apply-on-change='true' value='Left1Color'/>
 	<color-setting text='Left2 Color' apply-on-change='true' value='Left2Color'/>
 	<color-setting text='Left3 Color' apply-on-change='true' value='Left3Color'/>
