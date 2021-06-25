@@ -42,7 +42,7 @@ namespace CountersPlus.Counters
                 counter.fontSize = 2;
             }
             allNotes = notesLeft;
-            counter.color = Settings.CustomLeftColors ? Settings.Left7Color : Color.white;
+            counter.color = Settings.CustomLeftColors ? Settings.Left1Color : Color.white;
         }
 
         public void OnNoteCut(NoteData data, NoteCutInfo info)
@@ -61,7 +61,7 @@ namespace CountersPlus.Counters
             if (Settings.LabelAboveCount) counter.text = notesLeft.ToString();
             else counter.text = $"Notes Remaining: {notesLeft}";
 
-            counter.color = Settings.CustomLeftColors ? Settings.GetLeftColorFromLeft((notesLeft / allNotes) * 100) : Color.white;
+            counter.color = Settings.CustomLeftColors ? Settings.GetLeftColorFromLeft(((double)notesLeft / allNotes) * 100) : Color.white;
         }
     }
 }
