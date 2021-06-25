@@ -1,8 +1,8 @@
-﻿using BeatSaberMarkupLanguage.Attributes;
+﻿using System.Collections.Generic;
+using System.Linq;
+using BeatSaberMarkupLanguage.Attributes;
 using IPA.Config.Stores.Attributes;
 using IPA.Config.Stores.Converters;
-using System.Linq;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace CountersPlus.ConfigModels
@@ -25,7 +25,7 @@ namespace CountersPlus.ConfigModels
         [UIValue(nameof(DisplayRank))]
         public virtual bool DisplayRank { get; set; } = true;
         [UIValue(nameof(CustomRankColors))]
-        public virtual bool CustomRankColors { get; set; } = true;        
+        public virtual bool CustomRankColors { get; set; } = true;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(SSColor))]
         public virtual Color SSColor { get; set; } = Color.cyan;
@@ -63,15 +63,15 @@ namespace CountersPlus.ConfigModels
         };
 
         public Color GetRankColorFromRank(RankModel.Rank rank) => rank switch
-            {
-                RankModel.Rank.S => SColor,
-                RankModel.Rank.A => AColor,
-                RankModel.Rank.B => BColor,
-                RankModel.Rank.C => CColor,
-                RankModel.Rank.D => DColor,
-                RankModel.Rank.E => EColor,
-                _ => SSColor,
-            };
+        {
+            RankModel.Rank.S => SColor,
+            RankModel.Rank.A => AColor,
+            RankModel.Rank.B => BColor,
+            RankModel.Rank.C => CColor,
+            RankModel.Rank.D => DColor,
+            RankModel.Rank.E => EColor,
+            _ => SSColor,
+        };
     }
 
     public enum ScoreMode { Original, ScoreOnly, LeavePoints, RankOnly }

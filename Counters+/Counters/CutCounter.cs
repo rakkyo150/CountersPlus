@@ -1,7 +1,7 @@
-﻿using CountersPlus.ConfigModels;
-using CountersPlus.Counters.Interfaces;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Globalization;
+using CountersPlus.ConfigModels;
+using CountersPlus.Counters.Interfaces;
 using TMPro;
 using UnityEngine;
 
@@ -103,8 +103,8 @@ namespace CountersPlus.Counters
                 };
                 cutCounterLeft.text = $"{leftAverages[0]}\n{leftAverages[1]}\n{leftAverages[2]}";
                 cutCounterRight.text = $"{rightAverages[0]}\n{rightAverages[1]}\n{rightAverages[2]}";
-                cutCounterLeft.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresLeft[0]+totalScoresLeft[1]+totalScoresLeft[2],totalCutCountLeft)):Color.white;
-                cutCounterRight.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresRight[0] + totalScoresRight[1] + totalScoresRight[2],totalCutCountRight)):Color.white;
+                cutCounterLeft.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresLeft[0] + totalScoresLeft[1] + totalScoresLeft[2], totalCutCountLeft)) : Color.white;
+                cutCounterRight.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresRight[0] + totalScoresRight[1] + totalScoresRight[2], totalCutCountRight)) : Color.white;
             }
             else if (Settings.SeparateCutValues) // Before/After/Distance, for combined sabers
             {
@@ -116,7 +116,7 @@ namespace CountersPlus.Counters
                     FormatLabel(totalScoresLeft[2] + totalScoresRight[2], totalCutCount, shownDecimals)
                 };
                 cutCounterLeft.text = $"{cutValueAverages[0]}\n{cutValueAverages[1]}\n{cutValueAverages[2]}";
-                cutCounterLeft.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresLeft[0] + totalScoresRight[0]+ totalScoresLeft[1] + totalScoresRight[1]+ totalScoresLeft[2] + totalScoresRight[2],totalCutCount)):Color.white;
+                cutCounterLeft.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresLeft[0] + totalScoresRight[0] + totalScoresLeft[1] + totalScoresRight[1] + totalScoresLeft[2] + totalScoresRight[2], totalCutCount)) : Color.white;
             }
             else if (Settings.SeparateSaberCounts) // Combined cut, for separate sabers
             {
@@ -127,14 +127,14 @@ namespace CountersPlus.Counters
                 };
                 cutCounterLeft.text = $"{saberAverages[0]}";
                 cutCounterRight.text = $"{saberAverages[1]}";
-                cutCounterLeft.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresLeft[0] + totalScoresLeft[1] + totalScoresLeft[2], totalCutCountLeft)): Color.white;
+                cutCounterLeft.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresLeft[0] + totalScoresLeft[1] + totalScoresLeft[2], totalCutCountLeft)) : Color.white;
                 cutCounterRight.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresRight[0] + totalScoresRight[1] + totalScoresRight[2], totalCutCountRight)) : Color.white;
             }
             else // Combined cut, for combined sabers
             {
                 string averages = FormatLabel(totalScoresLeft[0] + totalScoresLeft[1] + totalScoresLeft[2] + totalScoresRight[0] + totalScoresRight[1] + totalScoresRight[2], totalCutCountLeft + totalCutCountRight, shownDecimals);
                 cutCounterLeft.text = $"{averages}";
-                cutCounterLeft.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresLeft[0] + totalScoresRight[0] + totalScoresLeft[1] + totalScoresRight[1] + totalScoresLeft[2] + totalScoresRight[2], totalCutCountLeft+totalCutCountRight)) : Color.white;
+                cutCounterLeft.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresLeft[0] + totalScoresRight[0] + totalScoresLeft[1] + totalScoresRight[1] + totalScoresLeft[2] + totalScoresRight[2], totalCutCountLeft + totalCutCountRight)) : Color.white;
             }
         }
 

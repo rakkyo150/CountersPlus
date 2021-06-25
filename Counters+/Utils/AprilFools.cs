@@ -1,11 +1,10 @@
-﻿using BeatSaberMarkupLanguage;
-using CountersPlus.ConfigModels;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using BeatSaberMarkupLanguage;
 using CountersPlus.Counters.Interfaces;
 using HarmonyLib;
 using HMUI;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using TMPro;
 using UnityEngine;
 using Zenject;

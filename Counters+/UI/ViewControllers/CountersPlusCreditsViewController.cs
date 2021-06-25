@@ -1,10 +1,10 @@
 ﻿using System.Collections;
+using BeatSaberMarkupLanguage.Attributes;
+using BeatSaberMarkupLanguage.ViewControllers;
+using CountersPlus.Utils;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using BeatSaberMarkupLanguage.ViewControllers;
-using BeatSaberMarkupLanguage.Attributes;
-using CountersPlus.Utils;
 using Zenject;
 
 namespace CountersPlus.UI.ViewControllers

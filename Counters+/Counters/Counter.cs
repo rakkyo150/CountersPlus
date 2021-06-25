@@ -1,9 +1,9 @@
-﻿using Zenject;
+﻿using CountersPlus.ConfigModels;
 using CountersPlus.Counters.Interfaces;
-using CountersPlus.ConfigModels;
 using CountersPlus.Utils;
 using TMPro;
 using UnityEngine;
+using Zenject;
 
 namespace CountersPlus.Counters
 {

@@ -1,7 +1,7 @@
-﻿using HMUI;
-using UnityEngine;
+﻿using BeatSaberMarkupLanguage.Components;
 using CountersPlus.Utils;
-using BeatSaberMarkupLanguage.Components;
+using HMUI;
+using UnityEngine;
 
 namespace CountersPlus.UI.SettingGroups
 {

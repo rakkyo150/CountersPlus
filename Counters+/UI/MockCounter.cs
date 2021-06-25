@@ -1,7 +1,7 @@
-﻿using CountersPlus.ConfigModels;
+﻿using System.Collections.Generic;
+using CountersPlus.ConfigModels;
 using CountersPlus.Custom;
 using CountersPlus.Utils;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using Zenject;

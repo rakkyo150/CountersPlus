@@ -1,7 +1,6 @@
-﻿using CountersPlus.ConfigModels;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using CountersPlus.ConfigModels;
 using TMPro;
 using UnityEngine;
 using Zenject;
@@ -36,7 +35,7 @@ namespace CountersPlus.Counters
                     GenerateBasicText("Average Speed", out averageCounter);
                     break;
                 case SpeedMode.SplitAverage:
-                    label= CanvasUtility.CreateTextFromSettings(Settings, new Vector3(0, 0, 0));
+                    label = CanvasUtility.CreateTextFromSettings(Settings, new Vector3(0, 0, 0));
                     label.fontSize = 3;
                     label.text = "Average Speed";
                     averageCounter = CanvasUtility.CreateTextFromSettings(Settings, new Vector3(0.4f, -0.4f, 0));
@@ -64,7 +63,7 @@ namespace CountersPlus.Counters
                     averageCounter = CanvasUtility.CreateTextFromSettings(Settings, new Vector3(0.4f, -0.4f, 0));
                     averageCounter.text = "0";
                     averageCounter.fontSize = 4;
-                    lAverageCounter = CanvasUtility.CreateTextFromSettings(Settings, new Vector3(-0.4f, -0.4f , 0));
+                    lAverageCounter = CanvasUtility.CreateTextFromSettings(Settings, new Vector3(-0.4f, -0.4f, 0));
                     lAverageCounter.text = "0";
                     lAverageCounter.fontSize = 4;
                     labelSecond = CanvasUtility.CreateTextFromSettings(Settings, new Vector3(0, -0.8f, 0));

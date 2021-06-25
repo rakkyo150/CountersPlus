@@ -1,8 +1,8 @@
-﻿using BeatSaberMarkupLanguage.Attributes;
+﻿using System.Collections.Generic;
+using System.Linq;
+using BeatSaberMarkupLanguage.Attributes;
 using IPA.Config.Stores.Attributes;
 using IPA.Config.Stores.Converters;
-using System.Linq;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace CountersPlus.ConfigModels

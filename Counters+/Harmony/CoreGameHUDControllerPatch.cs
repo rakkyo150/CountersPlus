@@ -1,12 +1,11 @@
-﻿using CountersPlus.ConfigModels;
-using HarmonyLib;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Reflection.Emit;
+using CountersPlus.ConfigModels;
+using HarmonyLib;
 using UnityEngine;
-using HarmonyObj = HarmonyLib.Harmony;
 
 namespace CountersPlus.Harmony
 {
@@ -55,7 +54,7 @@ namespace CountersPlus.Harmony
                             break;
                         case 3:
                         case 4:
-                            codes.Insert(i, new CodeInstruction(OpCodes.Call, ScoreMethod)); 
+                            codes.Insert(i, new CodeInstruction(OpCodes.Call, ScoreMethod));
                             break;
                     }
                     i++; // Increment i again so we do not enter an infinite loop.

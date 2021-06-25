@@ -1,7 +1,6 @@
 ﻿using CountersPlus.ConfigModels;
 using CountersPlus.Counters.Interfaces;
 using CountersPlus.Counters.NoteCountProcessors;
-using System.Linq;
 using TMPro;
 using UnityEngine;
 using Zenject;
@@ -11,7 +10,7 @@ namespace CountersPlus.Counters
 {
     internal class PBCounter : Counter<PBConfigModel>, IScoreEventHandler
     {
-        private readonly Vector3 SCORE_COUNTER_OFFSET = new Vector3(0, -1.85f, 0); 
+        private readonly Vector3 SCORE_COUNTER_OFFSET = new Vector3(0, -1.85f, 0);
 
         [Inject] private GameplayCoreSceneSetupData data;
         [Inject] private ScoreController scoreController;

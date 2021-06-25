@@ -18,7 +18,7 @@ namespace CountersPlus.UI.SettingGroups
         {
             var model = flowCoordinator.Value.AllConfigModels[idx];
             var customCellInfo = new CountersPlusListTableCell(idx, model.DisplayName);
-            
+
             if (model is CustomConfigModel customConfig)
             {
                 customCellInfo.text = customConfig.AttachedCustomCounter.Name;

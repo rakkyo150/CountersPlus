@@ -1,11 +1,10 @@
-﻿using CountersPlus.ConfigModels;
+﻿using System;
+using CountersPlus.ConfigModels;
 using CountersPlus.Counters;
 using CountersPlus.Counters.Event_Broadcasters;
 using CountersPlus.Counters.Interfaces;
 using CountersPlus.Counters.NoteCountProcessors;
 using CountersPlus.Utils;
-using IPA.Loader;
-using System;
 using UnityEngine;
 using Zenject;
 
@@ -19,7 +18,7 @@ namespace CountersPlus.Installers
         public override void InstallBindings()
         {
             MainConfigModel mainConfig = Plugin.MainConfig;
-            
+
             hudConfig = Container.Resolve<HUDConfigModel>();
             dataModel = Container.Resolve<PlayerDataModel>();
 
@@ -53,11 +52,12 @@ namespace CountersPlus.Installers
             AddCounter<SpinometerConfigModel, Spinometer>();
 
 
-            AddCounter<PBConfigModel, PBCounter>((settings) => {
+            AddCounter<PBConfigModel, PBCounter>((settings) =>
+            {
                 ScoreConfigModel scoreConfig = Container.Resolve<ScoreConfigModel>();
                 HUDCanvas canvasSettings = scoreConfig.CanvasID == -1 ? hudConfig.MainCanvasSettings : hudConfig.OtherCanvasSettings[scoreConfig.CanvasID];
                 return scoreConfig.Enabled && settings.UnderScore && (dataModel.playerData.playerSpecificSettings.noTextsAndHuds ? canvasSettings.IgnoreNoTextAndHUDOption : true);
-                });
+            });
 
             foreach (Custom.CustomCounter customCounter in Plugin.LoadedCustomCounters.Values)
             {

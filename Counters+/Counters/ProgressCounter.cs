@@ -1,8 +1,8 @@
-﻿using BeatSaberMarkupLanguage;
+﻿using System;
+using System.Linq;
+using BeatSaberMarkupLanguage;
 using CountersPlus.ConfigModels;
 using HMUI;
-using System;
-using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;

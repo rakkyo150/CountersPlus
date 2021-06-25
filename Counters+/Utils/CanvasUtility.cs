@@ -1,9 +1,8 @@
-﻿using BeatSaberMarkupLanguage;
+﻿using System.Collections.Generic;
+using System.Linq;
+using BeatSaberMarkupLanguage;
 using CountersPlus.ConfigModels;
 using HMUI;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using TMPro;
 using UnityEngine;
 using Zenject;
@@ -203,7 +202,7 @@ namespace CountersPlus.Utils
             tmp_text.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 2f);
             tmp_text.enableWordWrapping = false;
             tmp_text.overflowMode = TextOverflowModes.Overflow;
-            
+
             if (mainConfig.ItalicText)
             {
                 tmp_text.fontStyle = FontStyles.Italic;
@@ -273,7 +272,7 @@ namespace CountersPlus.Utils
             }
             return pos + offset + hudHeightOffset;
         }
-        
+
         public void ClearAllText()
         {
             foreach (Canvas canvas in CanvasIDToCanvas.Values)

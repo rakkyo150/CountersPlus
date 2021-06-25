@@ -1,14 +1,14 @@
-﻿using CountersPlus.Custom;
+﻿using System.Collections.Generic;
+using System.Reflection;
 using CountersPlus.ConfigModels;
+using CountersPlus.Custom;
 using CountersPlus.Installers;
 using IPA;
 using IPA.Config;
 using IPA.Config.Stores;
 using SiraUtil.Zenject;
-using System.Collections.Generic;
-using System.Reflection;
-using IPALogger = IPA.Logging.Logger;
 using HarmonyObj = HarmonyLib.Harmony;
+using IPALogger = IPA.Logging.Logger;
 
 namespace CountersPlus
 {

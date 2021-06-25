@@ -1,7 +1,7 @@
-﻿using CountersPlus.ConfigModels;
-using System;
+﻿using System;
 using System.Collections;
 using System.Linq;
+using CountersPlus.ConfigModels;
 using TMPro;
 using UnityEngine;
 using Zenject;

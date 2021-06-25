@@ -1,5 +1,5 @@
-﻿using CountersPlus.ConfigModels;
-using System.Collections;
+﻿using System.Collections;
+using CountersPlus.ConfigModels;
 using UnityEngine;
 
 namespace CountersPlus.Counters.Custom

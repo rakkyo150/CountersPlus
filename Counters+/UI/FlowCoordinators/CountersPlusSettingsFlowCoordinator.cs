@@ -1,12 +1,11 @@
-﻿using BeatSaberMarkupLanguage;
-using CountersPlus.ConfigModels;
-using CountersPlus.UI.ViewControllers;
-using CountersPlus.UI.ViewControllers.Editing;
-using CountersPlus.Utils;
-using HMUI;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using BeatSaberMarkupLanguage;
+using CountersPlus.ConfigModels;
+using CountersPlus.UI.ViewControllers;
+using CountersPlus.Utils;
+using HMUI;
 using UnityEngine;
 using VRUIControls;
 using Zenject;
@@ -34,7 +33,7 @@ namespace CountersPlus.UI.FlowCoordinators
         [Inject] private CountersPlusSettingSectionSelectionViewController settingsSelection;
         [Inject] private SettingsFlowCoordinator settingsFlowCoordinator;
         [Inject] private SongPreviewPlayer songPreviewPlayer;
-        
+
         private MainSettingsModelSO mainSettings;
         private HashSet<string> persistentScenes = new HashSet<string>();
         private bool hasTransitioned = false;

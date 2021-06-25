@@ -1,7 +1,7 @@
-﻿using CountersPlus.ConfigModels;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using CountersPlus.ConfigModels;
 using TMPro;
 using UnityEngine;
 using Zenject;
@@ -72,7 +72,7 @@ namespace CountersPlus.Counters
                         spinometer.text = $"<color=#{DetermineColor(highestSpin)}>{Mathf.RoundToInt(highestSpin)}</color>";
                         break;
                     case SpinometerMode.SplitAverage:
-                        spinometer.text = $"<color=#{DetermineColor(leftSpeed)}>{Mathf.RoundToInt(leftSpeed)}</color> | <color=#{DetermineColor(rightSpeed)}>{Mathf.RoundToInt(rightSpeed)}</color>";       
+                        spinometer.text = $"<color=#{DetermineColor(leftSpeed)}>{Mathf.RoundToInt(leftSpeed)}</color> | <color=#{DetermineColor(rightSpeed)}>{Mathf.RoundToInt(rightSpeed)}</color>";
                         break;
                 }
             }

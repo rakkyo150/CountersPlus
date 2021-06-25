@@ -1,13 +1,11 @@
-﻿using BeatSaberMarkupLanguage;
-using BeatSaberMarkupLanguage.Attributes;
+﻿using System.Linq;
+using System.Reflection;
+using BeatSaberMarkupLanguage;
 using BeatSaberMarkupLanguage.Components.Settings;
 using CountersPlus.ConfigModels;
 using CountersPlus.UI.FlowCoordinators;
 using CountersPlus.Utils;
 using HMUI;
-using System.Linq;
-using System.Reflection;
-using UnityEngine;
 using Zenject;
 
 namespace CountersPlus.UI.ViewControllers.Editing

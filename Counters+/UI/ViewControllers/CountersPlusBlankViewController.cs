@@ -1,7 +1,6 @@
-﻿using BeatSaberMarkupLanguage.Attributes;
+﻿using System.Collections;
+using BeatSaberMarkupLanguage.Attributes;
 using BeatSaberMarkupLanguage.ViewControllers;
-using HMUI;
-using System.Collections;
 using UnityEngine;
 
 namespace CountersPlus.UI.ViewControllers

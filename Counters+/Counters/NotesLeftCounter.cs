@@ -1,10 +1,10 @@
-﻿using CountersPlus.ConfigModels;
+﻿using System.Linq;
+using CountersPlus.ConfigModels;
 using CountersPlus.Counters.Interfaces;
 using CountersPlus.Counters.NoteCountProcessors;
-using System.Linq;
 using TMPro;
-using Zenject;
 using UnityEngine;
+using Zenject;
 
 namespace CountersPlus.Counters
 {

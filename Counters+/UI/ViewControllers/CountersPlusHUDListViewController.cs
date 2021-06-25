@@ -1,4 +1,6 @@
-﻿using BeatSaberMarkupLanguage;
+﻿using System.Collections.Generic;
+using System.Linq;
+using BeatSaberMarkupLanguage;
 using BeatSaberMarkupLanguage.Attributes;
 using BeatSaberMarkupLanguage.Components;
 using BeatSaberMarkupLanguage.Parser;
@@ -8,8 +10,6 @@ using CountersPlus.UI.FlowCoordinators;
 using CountersPlus.UI.ViewControllers.Editing;
 using CountersPlus.Utils;
 using HMUI;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using Zenject;
 
@@ -74,7 +74,7 @@ namespace CountersPlus.UI.ViewControllers
         public void ClearSelection() => data.tableView.ClearSelection();
 
         [UIAction("cell-selected")]
-        private void CellSelected (TableView view, int idx)
+        private void CellSelected(TableView view, int idx)
         {
             SelectedCanvas = idx - 1;
             if (IsDeleting)

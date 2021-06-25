@@ -1,10 +1,10 @@
-﻿using BeatSaberMarkupLanguage.Attributes;
+﻿using System.Collections.Generic;
+using BeatSaberMarkupLanguage.Attributes;
 using BeatSaberMarkupLanguage.Components;
 using BeatSaberMarkupLanguage.ViewControllers;
 using CountersPlus.UI.SettingGroups;
 using HMUI;
 using IPA.Utilities;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -71,7 +71,7 @@ namespace CountersPlus.UI.ViewControllers
         private void HandleCellSelectedEvent(SegmentedControl _, int cellIdx)
         {
             selectedGroup?.OnDisable();
-            
+
             selectedGroup = loadedSettingsGroups[cellIdx];
 
             selectedGroup.OnEnable();
