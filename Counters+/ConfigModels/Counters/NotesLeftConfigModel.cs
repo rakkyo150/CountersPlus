@@ -27,11 +27,11 @@ namespace CountersPlus.ConfigModels
         [UIValue(nameof(Left3Threshold))]
         public double Left3Threshold { get; set; } = 80;
         [UIValue(nameof(Left4Threshold))]
-        public double Left4Threshold { get; set; } = 60;
+        public double Left4Threshold { get; set; } = 75;
         [UIValue(nameof(Left5Threshold))]
-        public double Left5Threshold { get; set; } = 40;
+        public double Left5Threshold { get; set; } = 50;
         [UIValue(nameof(Left6Threshold))]
-        public double Left6Threshold { get; set; } = 20;
+        public double Left6Threshold { get; set; } = 25;
 
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Left1Color))]
@@ -44,7 +44,7 @@ namespace CountersPlus.ConfigModels
         public virtual Color Left3Color { get; set; } = Color.red;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Left4Color))]
-        public virtual Color Left4Color { get; set; } = new Color(1, 0.5f, 0);
+        public virtual Color Left4Color { get; set; } = Color.red;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Left5Color))]
         public virtual Color Left5Color { get; set; } = Color.yellow;
@@ -63,6 +63,7 @@ namespace CountersPlus.ConfigModels
             else if (leftRatio >= Left4Threshold) return Left4Color;
             else if (leftRatio >= Left5Threshold) return Left5Color;
             else if (leftRatio >= Left6Threshold) return Left6Color;
+            else if (leftRatio == 0) return Color.white;
             else return Left7Color;
         }
     }
