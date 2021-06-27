@@ -85,7 +85,7 @@ namespace CountersPlus.Counters
                 rankText.text = RankModel.GetRankName(immediateRank);
                 prevImmediateRank = immediateRank;
 
-                rankText.color = Settings.CustomRankColors ? Settings.GetRankColorFromRank(immediateRank) : Color.white;
+                rankText.color = Settings.CustomScoreColors ? Settings.GetScoreColorFromScore(relativeScoreAndImmediateRank.relativeScore * 100) : Color.white;
             }
             float relativeScore = relativeScoreAndImmediateRank.relativeScore * 100;
             relativeScoreText.text = $"{relativeScore.ToString($"F{Settings.DecimalPrecision}")}%";
