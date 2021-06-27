@@ -16,7 +16,7 @@ namespace CountersPlus.Counters
         [Inject] private MainConfigModel mainConfig;
 
         private RankModel.Rank prevImmediateRank = RankModel.Rank.SSS;
-        private TextMeshProUGUI rankText;
+        private TMP_Text rankText;
         private TextMeshProUGUI relativeScoreText;
 
         public override void CounterInit()
@@ -32,14 +32,16 @@ namespace CountersPlus.Counters
             relativeScoreText = baseGameScore.GetComponent<TextMeshProUGUI>();
             relativeScoreText.color = Color.white;
             GameObject baseGameRank = ImmediateRankGO(ref coreGameHUD);
-            rankText = baseGameRank.GetComponent<TextMeshProUGUI>();
+            Object.Destroy(baseGameRank.gameObject);
+            rankText = CanvasUtility.CreateTextFromSettings(Settings,Vector3.zero);
             rankText.color = Color.white;
+            rankText.text = "SSS";
 
             Canvas currentCanvas = CanvasUtility.GetCanvasFromID(Settings.CanvasID);
 
             old.rectTransform.SetParent(currentCanvas.transform, true);
             baseGameScore.transform.SetParent(old.transform, true);
-            baseGameRank.transform.SetParent(old.transform, true);
+            rankText.transform.SetParent(old.transform, true);
 
             if (!mainConfig.ItalicText)
             {
