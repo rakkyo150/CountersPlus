@@ -1,3 +1,5 @@
+## “ú–{Œê”ÅREADME‚Í[‚±‚¿‚ç](README.md)
+
 # (Improved)CounterPlus
 
 ![sample](Images/sample.png)

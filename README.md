@@ -1,3 +1,5 @@
+## The English version of README is [here](README_EN.md)
+
 # CounterPlus‰ü—Ç”Å
 
 ![ƒTƒ“ƒvƒ‹](Images/sample.png)
