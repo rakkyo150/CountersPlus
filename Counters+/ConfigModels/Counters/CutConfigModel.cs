@@ -23,50 +23,50 @@ namespace CountersPlus.ConfigModels
         public virtual int AveragePrecision { get; set; } = 1;
         [UIValue(nameof(CustomCutColors))]
         public virtual bool CustomCutColors { get; set; } = true;
-        [UIValue(nameof(SSThreshold))]
-        public double SSThreshold { get; set; } = 112;
-        [UIValue(nameof(SThreshold))]
-        public double SThreshold { get; set; } = 110;
-        [UIValue(nameof(AThreshold))]
-        public double AThreshold { get; set; } = 108;
-        [UIValue(nameof(BThreshold))]
-        public double BThreshold { get; set; } = 106;
-        [UIValue(nameof(CThreshold))]
-        public double CThreshold { get; set; } = 100;
-        [UIValue(nameof(DThreshold))]
-        public double DThreshold { get; set; } = 90;
+        [UIValue(nameof(Cut1Threshold))]
+        public double Cut1Threshold { get; set; } = 112;
+        [UIValue(nameof(Cut2Threshold))]
+        public double Cut2Threshold { get; set; } = 110;
+        [UIValue(nameof(Cut3Threshold))]
+        public double Cut3Threshold { get; set; } = 108;
+        [UIValue(nameof(Cut4Threshold))]
+        public double Cut4Threshold { get; set; } = 106;
+        [UIValue(nameof(Cut5Threshold))]
+        public double Cut5Threshold { get; set; } = 100;
+        [UIValue(nameof(Cut6Threshold))]
+        public double Cut6Threshold { get; set; } = 90;
         [UseConverter(typeof(HexColorConverter))]
-        [UIValue(nameof(SSColor))]
-        public virtual Color SSColor { get; set; } = Color.cyan;
+        [UIValue(nameof(Cut1Color))]
+        public virtual Color Cut1Color { get; set; } = Color.magenta;
         [UseConverter(typeof(HexColorConverter))]
-        [UIValue(nameof(SColor))]
-        public virtual Color SColor { get; set; } = Color.green;
+        [UIValue(nameof(Cut2Color))]
+        public virtual Color Cut2Color { get; set; } = Color.cyan;
         [UseConverter(typeof(HexColorConverter))]
-        [UIValue(nameof(AColor))]
-        public virtual Color AColor { get; set; } = Color.yellow;
+        [UIValue(nameof(Cut3Color))]
+        public virtual Color Cut3Color { get; set; } = Color.green;
         [UseConverter(typeof(HexColorConverter))]
-        [UIValue(nameof(BColor))]
-        public virtual Color BColor { get; set; } = new Color(1, 0.5f, 0);
+        [UIValue(nameof(Cut4Color))]
+        public virtual Color Cut4Color { get; set; } = Color.yellow;
         [UseConverter(typeof(HexColorConverter))]
-        [UIValue(nameof(CColor))]
-        public virtual Color CColor { get; set; } = Color.red;
+        [UIValue(nameof(Cut5Color))]
+        public virtual Color Cut5Color { get; set; } = new Color(1, 0.5f, 0);
         [UseConverter(typeof(HexColorConverter))]
-        [UIValue(nameof(DColor))]
-        public virtual Color DColor { get; set; } = Color.red;
+        [UIValue(nameof(Cut6Color))]
+        public virtual Color Cut6Color { get; set; } = Color.red;
         [UseConverter(typeof(HexColorConverter))]
-        [UIValue(nameof(EColor))]
-        public virtual Color EColor { get; set; } = Color.red;
+        [UIValue(nameof(Cut7Color))]
+        public virtual Color Cut7Color { get; set; } = Color.red;
 
         public Color GetCutColorFromCut(double score)
         {
-            if (score >= SSThreshold) return SSColor;
-            else if (score >= SThreshold) return SColor;
-            else if (score >= AThreshold) return AColor;
-            else if (score >= BThreshold) return BColor;
-            else if (score >= CThreshold) return CColor;
-            else if (score >= DThreshold) return DColor;
+            if (score >= Cut1Threshold) return Cut1Color;
+            else if (score >= Cut2Threshold) return Cut2Color;
+            else if (score >= Cut3Threshold) return Cut3Color;
+            else if (score >= Cut4Threshold) return Cut4Color;
+            else if (score >= Cut5Threshold) return Cut5Color;
+            else if (score >= Cut6Threshold) return Cut6Color;
             else if (score == 0) return Color.white;
-            else return EColor;
+            else return Cut7Color;
         }
     }
 }
