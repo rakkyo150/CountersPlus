@@ -19,16 +19,16 @@ namespace CountersPlus.Counters
         public void OnNoteCut(NoteData data, NoteCutInfo info)
         {
             if (Settings.CountBadCuts && !info.allIsOK && data.colorType != ColorType.None)
-            {           
+            {
                 counter.text = (++notesMissed).ToString();
-                counter.color = Settings.CustomMissColors? Settings.GetMissColorFromMiss(notesMissed):Color.white ;
+                counter.color = Settings.CustomMissColors ? Settings.GetMissColorFromMiss(notesMissed) : Color.white;
             }
         }
 
         public void OnNoteMiss(NoteData data)
         {
             if (data.colorType != ColorType.None) counter.text = (++notesMissed).ToString();
-            counter.color = Settings.CustomMissColors? Settings.GetMissColorFromMiss(notesMissed) : Color.white;
+            counter.color = Settings.CustomMissColors ? Settings.GetMissColorFromMiss(notesMissed) : Color.white;
         }
     }
 }
