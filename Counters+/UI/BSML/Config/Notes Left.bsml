@@ -14,4 +14,5 @@
 	<color-setting text='Left5 Color' apply-on-change='true' value='Left5Color'/>
 	<color-setting text='Left6 Color' apply-on-change='true' value='Left6Color'/>
 	<color-setting text='Left7 Color' apply-on-change='true' value='Left7Color'/>
+	<color-setting text='Left Last Color' apply-on-change='true' value='LeftLastColor'/>
 </vertical>

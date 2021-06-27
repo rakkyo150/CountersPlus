@@ -54,6 +54,9 @@ namespace CountersPlus.ConfigModels
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Left7Color))]
         public virtual Color Left7Color { get; set; } = Color.cyan;
+        [UseConverter(typeof(HexColorConverter))]
+        [UIValue(nameof(LeftLastColor))]
+        public virtual Color LeftLastColor { get; set; } = Color.white;
 
         public Color GetLeftColorFromLeft(double leftRatio)
         {
@@ -63,7 +66,7 @@ namespace CountersPlus.ConfigModels
             else if (leftRatio >= Left4Threshold) return Left4Color;
             else if (leftRatio >= Left5Threshold) return Left5Color;
             else if (leftRatio >= Left6Threshold) return Left6Color;
-            else if (leftRatio == 0) return Color.white;
+            else if (leftRatio == 0) return LeftLastColor;
             else return Left7Color;
         }
     }
