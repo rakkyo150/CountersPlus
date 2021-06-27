@@ -13,6 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Counters+", "Counters+\Counters+.csproj", "{A5DBF7F3-FE93-4BB1-8023-2DD50DFD3350}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{A3ECBEF7-CA40-4509-8628-4EFEE03AAD4D}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\デスクトップ\sample.png = ..\..\..\デスクトップ\sample.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +31,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A3ECBEF7-CA40-4509-8628-4EFEE03AAD4D} = {68603FE6-2E4E-4062-A149-F685F27251A5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {47A61869-FDC2-4AF8-A1D0-29EAF1AB19CE}

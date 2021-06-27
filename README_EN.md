@@ -1,35 +1,89 @@
 # (Improved)CounterPlus
 
 ## Differences from the original version
-In CutCounter, NoteCounter, NoteLeftCounter, and SpeedCounter, it is now possible to add an arbitrary color for each arbitrary threshold. <br>
+In ScoreCounter, ProgressCounter, CutCounter, NoteCounter, NoteLeftCounter, and SpeedCounter, it is now possible to add an arbitrary color for each arbitrary threshold. <br>
 The default thresholds and colors are rather sketchy, so you may want to customize them to suit your needs. <br> 
 
 ## Settings
 Please note that only the parts that differ from the original version will be covered.
 
+### ScoreCounter
+Threshold and color are divided into 7 levels.
+|Item|Description|.
+|`Custom Score Colors`|Whether to add colors or not|
+|`Score1 Threshold`|How far from 100%|
+|`Score2 Threshold`|How far from `Score1 Threshold`|.
+|`Score3 Threshold`|How far from `Score2 Threshold`|
+|`Score4 Threshold`|How far from `Score3 Threshold`|
+|`Score5 Threshold`|How far from `Score4 Threshold`|
+|`Score6 Threshold`|How far from `Score5 Threshold`|
+|`Score1 Color`|select a color for `Score1 Threshold` to 100%| 
+|`Score2 Color`|select a color for `Score2 Threshold` to `Score1 Threshold`| 
+|`Score3 Color`|select a color for `Score3 Threshold` to `Score2 Threshold`|
+|`Score4 Color`|select a color for `Score4 Threshold` to `Score3 Threshold`|
+|`Score5 Color`|select a color for `Score5 Threshold` to `Score4 Threshold`| 
+|`Score6 Color`|select a color for `Score6 Threshold` to `Score5 Threshold`|
+|`Score7 Color`|select a color below `Score6 Threshold`|
+
+### ProgressCounter
+Threshold and color are divided into 7 levels.
+|Item|Description|.
+|`Custom Progress Colors`|Whether to add colors or not|
+|`Progress1 Threshold`|How far from SongStart|
+|`Progress2 Threshold`|How far from `Progress1 Threshold`|.
+|`Progress3 Threshold`|How far from `Progress2 Threshold`|
+|`Progress4 Threshold`|How far from `Progress3 Threshold`?|
+|`Progress5 Threshold`|How far from `Progress4 Threshold`|
+|`Progress6 Threshold`|How far from `Progress5 Threshold`?|
+|`Progress1 Color`|select a color for `Progress1 Threshold` to 115| 
+|`Progress2 Color`|select a color for `Progress2 Threshold` to `Progress1 Threshold`| 
+|`Progress3 Color`|select a color for `Progress3 Threshold` to `Progress2 Threshold`|
+|`Progress4 Color`|select a color for `Progress4 Threshold` to `Progress3 Threshold`|
+|`Progress5 Color`|select a color for `Progress5 Threshold` to `Progress4 Threshold`| 
+|`Progress6 Color`|select a color for `Progress6 Threshold` to `Progress5 Threshold`|
+|`Progress7 Color`|select a color below `Progress6 Threshold`|
+
 ### CutCounter
 Threshold and color are divided into 7 levels.
-|Item|Content|.
+|Item|Description|.
 |`Custom Cut Colors`|Whether to add colors or not|
-|`SS Threshold`|How far from 115|
-|`S Threshold`|How far from `SS Threshold`|.
-|`A Threshold`|How far from `S Threshold`|
-|`B Threshold`|How far from `A Threshold`?|
-|`C Threshold`|How far from `B Threshold`|
-|`D Threshold`|How far from `C Threshold`?|
-|`SS Color`|select a color for `SS Threshold` to 115| 
-|`S Color`|select a color for `S Threshold` to `SS Threshold`| 
-|`A Color`|select a color for `A Threshold` to `S Threshold`|
-|`B Color`|select a color for `B Threshold` to `A Threshold`|
-|`B Color`|select a color for `B Threshold` to `A Threshold`| 
-|`D Color`|select a color for `D Threshold` to `C Threshold`|
-|`E Color`|select a color below `D Threshold`|
+|`Cut1 Threshold`|How far from 115|
+|`Cut2 Threshold`|How far from `Cut1 Threshold`|.
+|`Cut3 Threshold`|How far from `Cut2 Threshold`|
+|`Cut4 Threshold`|How far from `Cut3 Threshold`?|
+|`Cut5 Threshold`|How far from `Cut4 Threshold`|
+|`Cut6 Threshold`|How far from `Cut5 Threshold`?|
+|`Cut1 Color`|select a color for `Cut1 Threshold` to 115| 
+|`Cut2 Color`|select a color for `Cut2 Threshold` to `Cut1 Threshold`| 
+|`Cut3 Color`|select a color for `Cut3 Threshold` to `Cut2 Threshold`|
+|`Cut4 Color`|select a color for `Cut4 Threshold` to `Cut3 Threshold`|
+|`Cut5 Color`|select a color for `Cut5 Threshold` to `Cut4 Threshold`| 
+|`Cut6 Color`|select a color for `Cut6 Threshold` to `Cut5 Threshold`|
+|`Cut7 Color`|select a color below `Cut6 Threshold`|
+
+### MissCounter
+Threshold and color are divided into 7 levels.
+|Item|Description|.
+|`Custom Miss Colors`|Whether to add colors or not|
+|`Miss1 Threshold`|How far from 0 miss|
+|`Miss2 Threshold`|How far from `Miss1 Threshold`|.
+|`Miss3 Threshold`|How far from `Miss2 Threshold`|
+|`Miss4 Threshold`|How far from `Miss3 Threshold`?|
+|`Miss5 Threshold`|How far from `Miss4 Threshold`|
+|`Miss6 Threshold`|How far from `Miss5 Threshold`?|
+|`Miss1 Color`|select a color for `Miss1 Threshold` to 115| 
+|`Miss2 Color`|select a color for `Miss2 Threshold` to `Miss1 Threshold`| 
+|`Miss3 Color`|select a color for `Miss3 Threshold` to `Miss2 Threshold`|
+|`Miss4 Color`|select a color for `Miss4 Threshold` to `Miss3 Threshold`|
+|`Miss5 Color`|select a color for `Miss5 Threshold` to `Miss4 Threshold`| 
+|`Miss6 Color`|select a color for `Miss6 Threshold` to `Miss5 Threshold`|
+|`Miss7 Color`|select a color below `Miss6 Threshold`|
 
 ### NoteCounter
 Threshold and color are divided into seven levels.
-|Item|Content|.
+|Item|Description|.
 |`Custom Note Colors`|Whether to add colors or not|
-|`Note1 Threshold`|How far from 115| 
+|`Note1 Threshold`|How far from goodcut100%| 
 |`Note2 Threshold`|How far from `Note1 Threshold`|
 |`Note3 Threshold`|How far from `Note2 Threshold`|
 |`Note4 Threshold`|How far from `Note3 Threshold`|
@@ -45,9 +99,9 @@ Threshold and color are divided into seven levels.
 
 ### NoteLeftCounter
 Threshold and color are divided into 7 levels.
-|Item|Content|.
+|Item|Description|.
 |`Custom Notes Left Colors`|Whether to add colors|
-|`Left1 Threshold`|How far from 115| 
+|`Left1 Threshold`|How far from NotesLeft 100%| 
 |`Left2 Threshold`|How far from `Left3 Threshold`|
 |`Left3 Threshold`|How far from `Left2 Threshold`| 
 |`Left4 Threshold`|How far from `Left3 Threshold`| 
@@ -59,12 +113,13 @@ Threshold and color are divided into 7 levels.
 |`Left5 Color`|select a color for `Left5 Threshold` to `Left4 Threshold`| 
 |`Left6 Color`|select a color for `Left6 Threshold` to `Left5 Threshold`|
 |`Left7 Color`|select a color below `Left6 Threshold`|
+|`Left Last Color`|Select the color when the number of remaining notes is 0|
 
 ## SpeedCounter
 Threshold and color are divided into 7 levels.
-|Item|Content|.
+|Item|Description|.
 |`Custom Speed Colors`|Whether to add colors|
-|`Speed1 Threshold`|How far from 115| 
+|`Speed1 Threshold`|Where from the highest speed tire| 
 |`Speed2 Threshold`|How far from `Speed1 Threshold`|
 |`Speed3 Threshold`|How far from `Speed2 Threshold`| 
 |`Speed4 Threshold`|How far from `Speed3 Threshold`|

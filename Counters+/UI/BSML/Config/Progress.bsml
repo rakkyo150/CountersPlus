@@ -3,12 +3,12 @@
   <dropdown-list-setting text='Mode' apply-on-change='true' value='Mode' options='Modes' formatter='ModeFormat' hover-hint='How should this Counter display data?'/>
   <checkbox-setting text='Include Progress Ring' apply-on-change='true' value='IncludeRing' hover-hint='Whether or not the Progress Ring will also be affected by the "Show Time Left" setting. Only active in "Original" mode.'/>
 	<checkbox-setting text='Custom Progress Colors' apply-on-change='true' value='CustomProgressColors' hover-hint='Colors your Progress Counter.'/>
-	<increment-setting text='Progress1 Threshold' max='100' value='Progress1Threshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='Progress2 Threshold' max='100' value='Progress2Threshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='Progress3 Threshold' max='100' value='Progress3Threshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='Progress4 Threshold' max='100' value='Progress4Threshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='Progress5 Threshold' max='100' value='Progress5Threshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='Progress6 Threshold' max='100' value='Progress6Threshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='Progress1 Threshold(lowest%)' max='100' value='Progress1Threshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='Progress2 Threshold(%)' max='100' value='Progress2Threshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='Progress3 Threshold(%)' max='100' value='Progress3Threshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='Progress4 Threshold(%)' max='100' value='Progress4Threshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='Progress5 Threshold(%)' max='100' value='Progress5Threshold' apply-on-change='true' increment='0.1'/>
+	<increment-setting text='Progress6 Threshold(highest%)' max='100' value='Progress6Threshold' apply-on-change='true' increment='0.1'/>
 	<color-setting text='Progress1 Color' apply-on-change='true' value='Progress1Color'/>
 	<color-setting text='Progress2 Color' apply-on-change='true' value='Progress2Color'/>
 	<color-setting text='Progress3 Color' apply-on-change='true' value='Progress3Color'/>
