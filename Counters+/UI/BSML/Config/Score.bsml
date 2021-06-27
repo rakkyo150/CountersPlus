@@ -1,4 +1,4 @@
-﻿﻿<vertical spacing='1' horizontal-fit='PreferredSize'>
+﻿<vertical spacing='1' horizontal-fit='PreferredSize'>
 	<checkbox-setting text='Display Rank' apply-on-change='true' value='DisplayRank' hover-hint='Displays the rank as you progress in a song.'/>
 	<dropdown-list-setting text='Mode' apply-on-change='true' value='Mode' options='Modes' formatter='ModeFormat' hover-hint='How should this Counter display data?'/>
 	<list-setting text='Percentage Precision' apply-on-change='true' value='DecimalPrecision' options='DecimalPrecisions' hover-hint='How precise should the precentage be?'/>
