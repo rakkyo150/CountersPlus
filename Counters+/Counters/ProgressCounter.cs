@@ -68,12 +68,15 @@ namespace CountersPlus.Counters
                 case ProgressMode.TimeInBeats:
                     float beats = Mathf.Round(songBPM / 60 * time / 0.25f) * 0.25f;
                     timeText.text = beats.ToString("F2");
+                    progressRing.color= Settings.CustomProgressColors ? Settings.GetProgressColorFromProgress(beats/(songBPM / 60 * length) *100 ) : Color.white;
                     break;
                 case ProgressMode.Original:
                     timeText.text = $"{Math.Floor(time / 60):N0}:{Math.Floor(time % 60):00}";
+                    progressRing.color= Settings.CustomProgressColors ? Settings.GetProgressColorFromProgress(length / time * 100) : Color.white;
                     break;
                 default:
                     timeText.text = $"{time / length * 100:00}%";
+                    timeText.color = Settings.CustomProgressColors ? Settings.GetProgressColorFromProgress(time / length * 100) : Color.white;
                     return;
             }
 
