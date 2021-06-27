@@ -50,7 +50,6 @@ namespace CountersPlus.Counters
             if (data.colorType != ColorType.None && !noteCountProcessor.ShouldIgnoreNote(data))
             {
                 DecrementCounter();
-                finishNotes++;
             }
         }
 
@@ -59,7 +58,6 @@ namespace CountersPlus.Counters
             if (data.colorType != ColorType.None && !noteCountProcessor.ShouldIgnoreNote(data))
             {
                 DecrementCounter();
-                finishNotes++;
             }
         }
 

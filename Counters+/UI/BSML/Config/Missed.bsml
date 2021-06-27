@@ -1,3 +1,17 @@
 ﻿<vertical spacing='1' horizontal-fit='PreferredSize'>
   <checkbox-setting text='Include Bad Cuts' apply-on-change='true' value='CountBadCuts' hover-hint='Bad cuts count towards the Missed counter.'/>
+	<checkbox-setting text='Custom Miss Colors' apply-on-change='true' value='CustomMissColors' hover-hint='Colors your Miss Counter.'/>
+	<increment-setting text='Miss1 Threshold' min='0' value='Miss1Threshold' integer-only='true' apply-on-change='true' increment='1'/>
+	<increment-setting text='Miss2 Threshold' min='0' value='Miss2Threshold' integer-only='true' apply-on-change='true' increment='1'/>
+	<increment-setting text='Miss3 Threshold' min='0' value='Miss3Threshold' integer-only='true' apply-on-change='true' increment='1'/>
+	<increment-setting text='Miss4 Threshold' min='0' value='Miss4Threshold' integer-only='true' apply-on-change='true' increment='1'/>
+	<increment-setting text='Miss5 Threshold' min='0' value='Miss5Threshold' integer-only='true' apply-on-change='true' increment='1'/>
+	<increment-setting text='Miss6 Threshold' min='0' value='Miss6Threshold' integer-only='true' apply-on-change='true' increment='1'/>
+	<color-setting text='Miss1 Color' apply-on-change='true' value='Miss1Color'/>
+	<color-setting text='Miss2 Color' apply-on-change='true' value='Miss2Color'/>
+	<color-setting text='Miss3 Color' apply-on-change='true' value='Miss3Color'/>
+	<color-setting text='Miss4 Color' apply-on-change='true' value='Miss4Color'/>
+	<color-setting text='Miss5 Color' apply-on-change='true' value='Miss5Color'/>
+	<color-setting text='Miss6 Color' apply-on-change='true' value='Miss6Color'/>
+	<color-setting text='Miss7 Color' apply-on-change='true' value='Miss7Color'/>
 </vertical>
