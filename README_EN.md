@@ -1,5 +1,7 @@
 # (Improved)CounterPlus
 
+![sample](Images/sample.png)
+
 ## Differences from the original version
 In ScoreCounter, ProgressCounter, CutCounter, NoteCounter, NoteLeftCounter, and SpeedCounter, it is now possible to add an arbitrary color for each arbitrary threshold. <br>
 The default thresholds and colors are rather sketchy, so you may want to customize them to suit your needs. <br> 

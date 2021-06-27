@@ -1,5 +1,7 @@
 # CounterPlus改良版
 
+![サンプル](Images/sample.png)
+
 ## オリジナルバージョンとの違い
 ScoreCounter,ProgressCounter,CutCounter,MissCounter,NoteCounter,NoteLeftCounter,SpeedCounterにおいて、任意の閾値ごとに任意の色を付けることができるようにしました。<br>
 
