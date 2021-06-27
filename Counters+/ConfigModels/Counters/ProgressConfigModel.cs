@@ -71,12 +71,12 @@ namespace CountersPlus.ConfigModels
 
         public Color GetProgressColorFromProgress(double progressRatio)
         {
-            if (progressRatio >= Progress1Threshold) return Progress1Color;
-            else if (progressRatio >= Progress2Threshold) return Progress2Color;
-            else if (progressRatio >= Progress3Threshold) return Progress3Color;
-            else if (progressRatio >= Progress4Threshold) return Progress4Color;
-            else if (progressRatio >= Progress5Threshold) return Progress5Color;
-            else if (progressRatio >= Progress6Threshold) return Progress6Color;
+            if (progressRatio <= Progress1Threshold) return Progress1Color;
+            else if (progressRatio <= Progress2Threshold) return Progress2Color;
+            else if (progressRatio <= Progress3Threshold) return Progress3Color;
+            else if (progressRatio <= Progress4Threshold) return Progress4Color;
+            else if (progressRatio <= Progress5Threshold) return Progress5Color;
+            else if (progressRatio <= Progress6Threshold) return Progress6Color;
             else return Progress7Color;
         }
 
