@@ -53,19 +53,19 @@ namespace CountersPlus.ConfigModels
         public virtual Color Speed2Color { get; set; } = Color.red;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Speed3Color))]
-        public virtual Color Speed3Color { get; set; } = new Color(1, 0.5f, 0);
+        public virtual Color Speed3Color { get; set; } = Color.red;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Speed4Color))]
-        public virtual Color Speed4Color { get; set; } = Color.yellow;
+        public virtual Color Speed4Color { get; set; } = new Color(1, 0.5f, 0);
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Speed5Color))]
-        public virtual Color Speed5Color { get; set; } = Color.green;
+        public virtual Color Speed5Color { get; set; } = Color.yellow;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Speed6Color))]
-        public virtual Color Speed6Color { get; set; } = Color.blue;
+        public virtual Color Speed6Color { get; set; } = Color.green;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Speed7Color))]
-        public virtual Color Speed7Color { get; set; } = Color.magenta;
+        public virtual Color Speed7Color { get; set; } = Color.cyan;
 
         public Color GetSpeedColorFromSpeed(double speed)
         {

@@ -37,19 +37,19 @@ namespace CountersPlus.ConfigModels
         public double DThreshold { get; set; } = 90;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(SSColor))]
-        public virtual Color SSColor { get; set; } = Color.magenta;
+        public virtual Color SSColor { get; set; } = Color.cyan;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(SColor))]
-        public virtual Color SColor { get; set; } = Color.blue;
+        public virtual Color SColor { get; set; } = Color.green;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(AColor))]
-        public virtual Color AColor { get; set; } = Color.green;
+        public virtual Color AColor { get; set; } = Color.yellow;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(BColor))]
-        public virtual Color BColor { get; set; } = Color.yellow;
+        public virtual Color BColor { get; set; } = new Color(1, 0.5f, 0);
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(CColor))]
-        public virtual Color CColor { get; set; } = new Color(1, 0.5f, 0);
+        public virtual Color CColor { get; set; } = Color.red;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(DColor))]
         public virtual Color DColor { get; set; } = Color.red;

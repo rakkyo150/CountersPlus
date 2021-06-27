@@ -25,13 +25,13 @@ namespace CountersPlus.ConfigModels
         [UIValue(nameof(Left2Threshold))]
         public double Left2Threshold { get; set; } = 90;
         [UIValue(nameof(Left3Threshold))]
-        public double Left3Threshold { get; set; } = 75;
+        public double Left3Threshold { get; set; } = 80;
         [UIValue(nameof(Left4Threshold))]
-        public double Left4Threshold { get; set; } = 50;
+        public double Left4Threshold { get; set; } = 60;
         [UIValue(nameof(Left5Threshold))]
-        public double Left5Threshold { get; set; } = 25;
+        public double Left5Threshold { get; set; } = 40;
         [UIValue(nameof(Left6Threshold))]
-        public double Left6Threshold { get; set; } = 10;
+        public double Left6Threshold { get; set; } = 20;
 
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Left1Color))]
@@ -41,19 +41,19 @@ namespace CountersPlus.ConfigModels
         public virtual Color Left2Color { get; set; } = Color.red;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Left3Color))]
-        public virtual Color Left3Color { get; set; } = new Color(1, 0.5f, 0);
+        public virtual Color Left3Color { get; set; } = Color.red;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Left4Color))]
-        public virtual Color Left4Color { get; set; } = Color.yellow;
+        public virtual Color Left4Color { get; set; } = new Color(1, 0.5f, 0);
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Left5Color))]
-        public virtual Color Left5Color { get; set; } = Color.green;
+        public virtual Color Left5Color { get; set; } = Color.yellow;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Left6Color))]
-        public virtual Color Left6Color { get; set; } = Color.blue;
+        public virtual Color Left6Color { get; set; } = Color.green;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Left7Color))]
-        public virtual Color Left7Color { get; set; } = Color.magenta;
+        public virtual Color Left7Color { get; set; } = Color.cyan;
 
         public Color GetLeftColorFromLeft(double leftRatio)
         {

@@ -38,19 +38,19 @@ namespace CountersPlus.ConfigModels
 
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Note1Color))]
-        public virtual Color Note1Color { get; set; } = Color.magenta;
+        public virtual Color Note1Color { get; set; } = Color.cyan;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Note2Color))]
-        public virtual Color Note2Color { get; set; } = Color.blue;
+        public virtual Color Note2Color { get; set; } = Color.green;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Note3Color))]
-        public virtual Color Note3Color { get; set; } = Color.green;
+        public virtual Color Note3Color { get; set; } = Color.yellow;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Note4Color))]
-        public virtual Color Note4Color { get; set; } = Color.yellow;
+        public virtual Color Note4Color { get; set; } = new Color(1, 0.5f, 0);
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Note5Color))]
-        public virtual Color Note5Color { get; set; } = new Color(1, 0.5f, 0);
+        public virtual Color Note5Color { get; set; } = Color.red;
         [UseConverter(typeof(HexColorConverter))]
         [UIValue(nameof(Note6Color))]
         public virtual Color Note6Color { get; set; } = Color.red;

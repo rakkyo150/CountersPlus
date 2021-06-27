@@ -1,6 +1,7 @@
 ﻿using CountersPlus.ConfigModels;
 using CountersPlus.Counters.Interfaces;
 using TMPro;
+using UnityEngine;
 
 namespace CountersPlus.Counters
 {
@@ -12,6 +13,7 @@ namespace CountersPlus.Counters
         public override void CounterInit()
         {
             GenerateBasicText("Misses", out counter);
+            counter.color = Settings.GetMissColorFromMiss(notesMissed);
         }
 
         public void OnNoteCut(NoteData data, NoteCutInfo info)
@@ -19,14 +21,14 @@ namespace CountersPlus.Counters
             if (Settings.CountBadCuts && !info.allIsOK && data.colorType != ColorType.None)
             {           
                 counter.text = (++notesMissed).ToString();
-                counter.color = Settings.GetMissColorFromMiss(notesMissed);
+                counter.color = Settings.CustomMissColors? Settings.GetMissColorFromMiss(notesMissed):Color.white ;
             }
         }
 
         public void OnNoteMiss(NoteData data)
         {
             if (data.colorType != ColorType.None) counter.text = (++notesMissed).ToString();
-            counter.color = Settings.GetMissColorFromMiss(notesMissed);
+            counter.color = Settings.CustomMissColors? Settings.GetMissColorFromMiss(notesMissed) : Color.white;
         }
     }
 }
