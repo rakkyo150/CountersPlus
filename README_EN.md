@@ -8,8 +8,10 @@ The default thresholds and colors are rather sketchy, so you may want to customi
 Please note that only the parts that differ from the original version will be covered.
 
 ### ScoreCounter
-Threshold and color are divided into 7 levels.
-|Item|Description|.
+Threshold and color are divided into 7 levels.<br>
+If you enable Colored HUD of NalulunaCounters, you can't use this.
+|Item|Description|
+|:---|:---|
 |`Custom Score Colors`|Whether to add colors or not|
 |`Score1 Threshold`|How far from 100%|
 |`Score2 Threshold`|How far from `Score1 Threshold`|.
@@ -27,7 +29,8 @@ Threshold and color are divided into 7 levels.
 
 ### ProgressCounter
 Threshold and color are divided into 7 levels.
-|Item|Description|.
+|Item|Description|
+|:---|:---|
 |`Custom Progress Colors`|Whether to add colors or not|
 |`Progress1 Threshold`|How far from SongStart|
 |`Progress2 Threshold`|How far from `Progress1 Threshold`|.
@@ -45,7 +48,8 @@ Threshold and color are divided into 7 levels.
 
 ### CutCounter
 Threshold and color are divided into 7 levels.
-|Item|Description|.
+|Item|Description|
+|:---|:---|
 |`Custom Cut Colors`|Whether to add colors or not|
 |`Cut1 Threshold`|How far from 115|
 |`Cut2 Threshold`|How far from `Cut1 Threshold`|.
@@ -63,7 +67,8 @@ Threshold and color are divided into 7 levels.
 
 ### MissCounter
 Threshold and color are divided into 7 levels.
-|Item|Description|.
+|Item|Description|
+|:---|:---|
 |`Custom Miss Colors`|Whether to add colors or not|
 |`Miss1 Threshold`|How far from 0 miss|
 |`Miss2 Threshold`|How far from `Miss1 Threshold`|.
@@ -81,7 +86,8 @@ Threshold and color are divided into 7 levels.
 
 ### NoteCounter
 Threshold and color are divided into seven levels.
-|Item|Description|.
+|Item|Description|
+|:---|:---|
 |`Custom Note Colors`|Whether to add colors or not|
 |`Note1 Threshold`|How far from goodcut100%| 
 |`Note2 Threshold`|How far from `Note1 Threshold`|
@@ -99,7 +105,8 @@ Threshold and color are divided into seven levels.
 
 ### NoteLeftCounter
 Threshold and color are divided into 7 levels.
-|Item|Description|.
+|Item|Description|
+|:---|:---|
 |`Custom Notes Left Colors`|Whether to add colors|
 |`Left1 Threshold`|How far from NotesLeft 100%| 
 |`Left2 Threshold`|How far from `Left3 Threshold`|
@@ -117,7 +124,8 @@ Threshold and color are divided into 7 levels.
 
 ## SpeedCounter
 Threshold and color are divided into 7 levels.
-|Item|Description|.
+|Item|Description|
+|:---|:---|
 |`Custom Speed Colors`|Whether to add colors|
 |`Speed1 Threshold`|Where from the highest speed tire| 
 |`Speed2 Threshold`|How far from `Speed1 Threshold`|
