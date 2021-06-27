@@ -1,19 +1,13 @@
-﻿<vertical spacing='1' horizontal-fit='PreferredSize'>
-  <checkbox-setting text='Display Rank' apply-on-change='true' value='DisplayRank' hover-hint='Displays the rank as you progress in a song.'/>
-  <dropdown-list-setting text='Mode' apply-on-change='true' value='Mode' options='Modes' formatter='ModeFormat' hover-hint='How should this Counter display data?'/>
-  <list-setting text='Percentage Precision' apply-on-change='true' value='DecimalPrecision' options='DecimalPrecisions' hover-hint='How precise should the precentage be?'/>
-	<checkbox-setting text='Custom Score Colors' apply-on-change='true' value='CustomScoreColors' hover-hint='Colors your Score Counter.'/>
-	<increment-setting text='Score1 Threshold' max='100' value='Score1Threshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='Score2 Threshold' max='100' value='Score2Threshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='Score3 Threshold' max='100' value='Score3Threshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='Score4 Threshold' max='100' value='Score4Threshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='Score5 Threshold' max='100' value='Score5Threshold' apply-on-change='true' increment='0.1'/>
-	<increment-setting text='Score6 Threshold' max='100' value='Score6Threshold' apply-on-change='true' increment='0.1'/>
-	<color-setting text='Score1 Color' apply-on-change='true' value='Score1Color'/>
-	<color-setting text='Score2 Color' apply-on-change='true' value='Score2Color'/>
-	<color-setting text='Score3 Color' apply-on-change='true' value='Score3Color'/>
-	<color-setting text='Score4 Color' apply-on-change='true' value='Score4Color'/>
-	<color-setting text='Score5 Color' apply-on-change='true' value='Score5Color'/>
-	<color-setting text='Score6 Color' apply-on-change='true' value='Score6Color'/>
-	<color-setting text='Score7 Color' apply-on-change='true' value='Score7Color'/>
+﻿﻿<vertical spacing='1' horizontal-fit='PreferredSize'>
+	<checkbox-setting text='Display Rank' apply-on-change='true' value='DisplayRank' hover-hint='Displays the rank as you progress in a song.'/>
+	<dropdown-list-setting text='Mode' apply-on-change='true' value='Mode' options='Modes' formatter='ModeFormat' hover-hint='How should this Counter display data?'/>
+	<list-setting text='Percentage Precision' apply-on-change='true' value='DecimalPrecision' options='DecimalPrecisions' hover-hint='How precise should the precentage be?'/>
+	<checkbox-setting text='Custom Rank Colors' apply-on-change='true' value='CustomRankColors' hover-hint='Colors your Score Counter depending on the rank you have in a song.'/>
+	<color-setting text='SS Color' apply-on-change='true' value='SSColor' hover-hint='Change the rank color for the SS rank.'/>
+	<color-setting text='S Color' apply-on-change='true' value='SColor' hover-hint='Change the rank color for the S rank.'/>
+	<color-setting text='A Color' apply-on-change='true' value='AColor' hover-hint='Change the rank color for the A rank.'/>
+	<color-setting text='B Color' apply-on-change='true' value='BColor' hover-hint='Change the rank color for the B rank.'/>
+	<color-setting text='C Color' apply-on-change='true' value='CColor' hover-hint='Change the rank color for the C rank.'/>
+	<color-setting text='D Color' apply-on-change='true' value='DColor' hover-hint='Change the rank color for the D rank.'/>
+	<color-setting text='E Color' apply-on-change='true' value='EColor' hover-hint='Change the rank color for the E rank.'/>
 </vertical>

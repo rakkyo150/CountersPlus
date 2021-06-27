@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using BeatSaberMarkupLanguage.Attributes;
+﻿using BeatSaberMarkupLanguage.Attributes;
 using IPA.Config.Stores.Attributes;
 using IPA.Config.Stores.Converters;
+using System.Linq;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace CountersPlus.ConfigModels
@@ -24,54 +24,29 @@ namespace CountersPlus.ConfigModels
         public virtual int DecimalPrecision { get; set; } = 2;
         [UIValue(nameof(DisplayRank))]
         public virtual bool DisplayRank { get; set; } = true;
-
-        [UIValue(nameof(CustomScoreColors))]
-        public virtual bool CustomScoreColors { get; set; } = true;
-        [UIValue(nameof(Score1Threshold))]
-        public double Score1Threshold { get; set; } = 95;
-        [UIValue(nameof(Score2Threshold))]
-        public double Score2Threshold { get; set; } = 90;
-        [UIValue(nameof(Score3Threshold))]
-        public double Score3Threshold { get; set; } = 80;
-        [UIValue(nameof(Score4Threshold))]
-        public double Score4Threshold { get; set; } = 70;
-        [UIValue(nameof(Score5Threshold))]
-        public double Score5Threshold { get; set; } = 60;
-        [UIValue(nameof(Score6Threshold))]
-        public double Score6Threshold { get; set; } = 50;
+        [UIValue(nameof(CustomRankColors))]
+        public virtual bool CustomRankColors { get; set; } = true;
         [UseConverter(typeof(HexColorConverter))]
-        [UIValue(nameof(Score1Color))]
-        public virtual Color Score1Color { get; set; } = Color.magenta;
+        [UIValue(nameof(SSColor))]
+        public virtual Color SSColor { get; set; } = Color.cyan;
         [UseConverter(typeof(HexColorConverter))]
-        [UIValue(nameof(Score2Color))]
-        public virtual Color Score2Color { get; set; } = Color.cyan;
+        [UIValue(nameof(SColor))]
+        public virtual Color SColor { get; set; } = Color.white;
         [UseConverter(typeof(HexColorConverter))]
-        [UIValue(nameof(Score3Color))]
-        public virtual Color Score3Color { get; set; } = Color.green;
+        [UIValue(nameof(AColor))]
+        public virtual Color AColor { get; set; } = Color.green;
         [UseConverter(typeof(HexColorConverter))]
-        [UIValue(nameof(Score4Color))]
-        public virtual Color Score4Color { get; set; } = Color.yellow;
+        [UIValue(nameof(BColor))]
+        public virtual Color BColor { get; set; } = Color.yellow;
         [UseConverter(typeof(HexColorConverter))]
-        [UIValue(nameof(Score5Color))]
-        public virtual Color Score5Color { get; set; } = new Color(1, 0.5f, 0);
+        [UIValue(nameof(CColor))]
+        public virtual Color CColor { get; set; } = new Color(1, 0.5f, 0);
         [UseConverter(typeof(HexColorConverter))]
-        [UIValue(nameof(Score6Color))]
-        public virtual Color Score6Color { get; set; } = Color.red;
+        [UIValue(nameof(DColor))]
+        public virtual Color DColor { get; set; } = Color.red;
         [UseConverter(typeof(HexColorConverter))]
-        [UIValue(nameof(Score7Color))]
-        public virtual Color Score7Color { get; set; } = Color.red;
-
-        public Color GetScoreColorFromScore(double score)
-        {
-            if (score >= Score1Threshold) return Score1Color;
-            else if (score >= Score2Threshold) return Score2Color;
-            else if (score >= Score3Threshold) return Score3Color;
-            else if (score >= Score4Threshold) return Score4Color;
-            else if (score >= Score5Threshold) return Score5Color;
-            else if (score >= Score6Threshold) return Score6Color;
-            else return Score7Color;
-        }
-
+        [UIValue(nameof(EColor))]
+        public virtual Color EColor { get; set; } = Color.red;
 
         [UIValue(nameof(Modes))]
         public List<object> Modes => ModeToNames.Keys.Cast<object>().ToList();
@@ -87,7 +62,16 @@ namespace CountersPlus.ConfigModels
             { ScoreMode.RankOnly, "Remove Percentage" },
         };
 
-        
+        public Color GetRankColorFromRank(RankModel.Rank rank) => rank switch
+        {
+            RankModel.Rank.S => SColor,
+            RankModel.Rank.A => AColor,
+            RankModel.Rank.B => BColor,
+            RankModel.Rank.C => CColor,
+            RankModel.Rank.D => DColor,
+            RankModel.Rank.E => EColor,
+            _ => SSColor,
+        };
     }
 
     public enum ScoreMode { Original, ScoreOnly, LeavePoints, RankOnly }
