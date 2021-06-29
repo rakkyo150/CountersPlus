@@ -195,9 +195,11 @@
     <Compile Include="Counters\CutCounter.cs" />
     <Compile Include="Counters\Event Broadcasters\CounterEventBroadcaster.cs" />
     <Compile Include="Counters\Event Broadcasters\EventBroadcaster.cs" />
+    <Compile Include="Counters\Event Broadcasters\ExpandedNoteEventBroadcaster.cs" />
     <Compile Include="Counters\Event Broadcasters\NoteEventBroadcaster.cs" />
     <Compile Include="Counters\Event Broadcasters\ScoreEventBroadcaster.cs" />
     <Compile Include="Counters\FailCounter.cs" />
+    <Compile Include="Counters\Interfaces\ExpandedINoteEventHandler.cs" />
     <Compile Include="Counters\Interfaces\ICounter.cs" />
     <Compile Include="Counters\Interfaces\IEventHandler.cs" />
     <Compile Include="Counters\Interfaces\INoteEventHandler.cs" />

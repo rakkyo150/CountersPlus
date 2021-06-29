@@ -72,6 +72,7 @@ namespace CountersPlus.Installers
             /// LOADING BROADCASTERS WITH BROADCAST IN-GAME EVENTS TO COUNTERS AND STUFF ///
             Container.BindInterfacesAndSelfTo<CounterEventBroadcaster>().AsSingle().NonLazy();
             Container.BindInterfacesAndSelfTo<NoteEventBroadcaster>().AsSingle().NonLazy();
+            Container.BindInterfacesAndSelfTo<ExpandedNoteEventBroadcaster>().AsSingle().NonLazy();
             Container.BindInterfacesAndSelfTo<ScoreEventBroadcaster>().AsSingle().NonLazy();
             Plugin.Logger.Notice("Counters loaded!");
         }
