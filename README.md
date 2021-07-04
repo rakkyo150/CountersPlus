@@ -6,6 +6,7 @@
 
 ## オリジナルバージョンとの違い
 ScoreCounter,ProgressCounter,CutCounter,MissCounter,NoteCounter,NoteLeftCounter,SpeedCounterにおいて、任意の閾値ごとに任意の色を付けることができるようにしました。<br>
+[CenterDistanceCounter](https://github.com/rakkyo150/CenterDistanceCounter)のため、斬られたノーツの情報をより詳細に得ることができるインターフェイスを作りました。
 
 ## 設定項目
 オリジナルバージョンとは異なる部分のみ取り上げるので、ご了承ください。
