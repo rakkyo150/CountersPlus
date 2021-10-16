@@ -1,4 +1,4 @@
-## “ú–{Œê”ÅREADME‚Í[‚±‚¿‚ç](README.md)
+## â€œÃºâ€“{Å’Ãªâ€Ã…READMEâ€šÃ[â€šÂ±â€šÂ¿â€šÃ§](README.md)
 
 # (Improved)CounterPlus
 
@@ -6,7 +6,10 @@
 
 ## Differences from the original version
 In ScoreCounter, ProgressCounter, CutCounter, NoteCounter, NoteLeftCounter, and SpeedCounter, it is now possible to add an arbitrary color for each arbitrary threshold. <br>
-For [CenterDistanceCounter](https://github.com/rakkyo150/CenterDistanceCounter), I created an interface that allows you to get more detailed information about the slashed notes.
+~~For [CenterDistanceCounter](https://github.com/rakkyo150/CenterDistanceCounter), I created an interface that allows you to get more detailed information about the slashed notes.<br>~~
+ScoreCounter coloring interferes with the coloring of NalulunaCounters' Built-in HUD Color. <br>
+If you also have NalulunaCounters, it is recommended to turn off ScoreCounter coloring in this mod or turn off the built-in HUD Color in NalulunaCounters.
+
 
 ## Settings
 Please note that only the parts that differ from the original version will be covered.
