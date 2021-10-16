@@ -6,8 +6,8 @@
 
 ## オリジナルバージョンとの違い
 ScoreCounter,ProgressCounter,CutCounter,MissCounter,NoteCounter,NoteLeftCounter,SpeedCounterにおいて、任意の閾値ごとに任意の色を付けることができるようにしました。<br>
-~~[CenterDistanceCounter](https://github.com/rakkyo150/CenterDistanceCounter)のため、斬られたノーツの情報をより詳細に得ることができるインターフェイスを作りました。~~
-スコアカウンターの色付けが[NalulunaCounters](https://nalulululuna.fanbox.cc/posts/1804299)のBuilt-in HUD Colorの色付けと干渉します。
+~~[CenterDistanceCounter](https://github.com/rakkyo150/CenterDistanceCounter)のため、斬られたノーツの情報をより詳細に得ることができるインターフェイスを作りました。<br>~~
+スコアカウンターの色付けが[NalulunaCounters](https://nalulululuna.fanbox.cc/posts/1804299)のBuilt-in HUD Colorの色付けと干渉します。<br>
 NalulunaCountersも入れている場合は、当MODのスコアカウンターの色付けをオフにするかNalulunaCountersのBuilt-in HUD Colorをオフにするのをおすすめします。
 
 ## 設定項目
