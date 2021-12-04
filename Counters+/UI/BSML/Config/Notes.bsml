@@ -1,6 +1,7 @@
 ﻿<vertical spacing='1' horizontal-fit='PreferredSize'>
 	<checkbox-setting text='Show Percentage' apply-on-change='true' value='ShowPercentage' hover-hint='Toggles the percentage of notes hit over total notes.'/>
 	<list-setting text='Percentage Precision' apply-on-change='true' value='DecimalPrecision' options='DecimalPrecisions' hover-hint='How precise should the precentage be?'/>
+	<checkbox-setting text='Bloom' apply-on-change='true' value='Bloom'/>
 	<checkbox-setting text='Custom Note Colors' apply-on-change='true' value='CustomNoteColors' hover-hint='Colors your Note Counter.'/>
 	<increment-setting text='Note1 Threshold(highest%)' max='100' value='Note1Threshold' apply-on-change='true' increment='0.1'/>
 	<increment-setting text='Note2 Threshold(%)' max='100' value='Note2Threshold' apply-on-change='true' increment='0.1'/>

@@ -51,6 +51,10 @@ namespace CountersPlus.Counters
                     backgroundImage.type = Image.Type.Simple;
 
                     progressRing = CreateRing(canvas);
+                    if (Settings.Bloom)
+                    {
+                        progressRing.material = new Material(Shader.Find("UI/Default"));
+                    }
                     progressRing.rectTransform.anchoredPosition = timeText.rectTransform.anchoredPosition;
                     progressRing.transform.localScale = ringSize / 10;
                 }

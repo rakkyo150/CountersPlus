@@ -2,6 +2,7 @@
   <checkbox-setting text='Separate Saber Cuts' apply-on-change='true' value='SeparateSaberCounts' hover-hint='Shows the average cut for the left and right sabers separately.'/>
   <checkbox-setting text='Separate Cut Values' apply-on-change='true' value='SeparateCutValues' hover-hint='Show separate averages for angle before cut (0-70), angle after cut (0-30) and distance to center (0-15).'/>
   <list-setting text='Average Cut Precision'  apply-on-change='true' value='AveragePrecision' options='DecimalPrecisions' hover-hint='How many decimals should be shown on the average cuts?'/>
+	<checkbox-setting text='Bloom' apply-on-change='true' value='Bloom'/>
 	<checkbox-setting text='Custom Cut Colors' apply-on-change='true' value='CustomCutColors' hover-hint='Colors your Cut Counter.'/>
 	<increment-setting text='Cut1 Threshold(highest)' max='115' value='Cut1Threshold' apply-on-change='true' increment='0.1'/>
 	<increment-setting text='Cut2 Threshold' max='115' value='Cut2Threshold' apply-on-change='true' increment='0.1'/>

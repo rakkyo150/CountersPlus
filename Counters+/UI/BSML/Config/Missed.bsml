@@ -1,5 +1,6 @@
 ﻿<vertical spacing='1' horizontal-fit='PreferredSize'>
   <checkbox-setting text='Include Bad Cuts' apply-on-change='true' value='CountBadCuts' hover-hint='Bad cuts count towards the Missed counter.'/>
+	<checkbox-setting text='Bloom' apply-on-change='true' value='Bloom'/>
 	<checkbox-setting text='Custom Miss Colors' apply-on-change='true' value='CustomMissColors' hover-hint='Colors your Miss Counter.'/>
 	<increment-setting text='Miss1 Threshold(least)' min='0' value='Miss1Threshold' integer-only='true' apply-on-change='true' increment='1'/>
 	<increment-setting text='Miss2 Threshold' min='0' value='Miss2Threshold' integer-only='true' apply-on-change='true' increment='1'/>

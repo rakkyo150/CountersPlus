@@ -2,6 +2,7 @@
 using CountersPlus.ConfigModels;
 using CountersPlus.Counters.Interfaces;
 using CountersPlus.Counters.NoteCountProcessors;
+using CountersPlus.Counters.Bloom_Font_Asset_Makers;
 using TMPro;
 using UnityEngine;
 using Zenject;
@@ -38,6 +39,10 @@ namespace CountersPlus.Counters
             else
             {
                 counter = CanvasUtility.CreateTextFromSettings(Settings);
+                if (Settings.Bloom)
+                {
+                    counter.font = BloomFontAssetMaker.instance.BloomFontAsset();
+                }
                 counter.text = $"Notes Remaining: {notesLeft}";
                 counter.fontSize = 2;
             }

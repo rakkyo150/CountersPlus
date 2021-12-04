@@ -29,6 +29,9 @@ namespace CountersPlus.ConfigModels
         [UIAction(nameof(ModeFormat))]
         public string ModeFormat(SpeedMode pos) => ModeToNames[pos];
 
+        [UIValue(nameof(Bloom))]
+        public virtual bool Bloom { get; set; } = true;
+
         [UIValue(nameof(CustomSpeedColors))]
         public virtual bool CustomSpeedColors { get; set; } = true;
 

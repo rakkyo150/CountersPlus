@@ -17,6 +17,8 @@ namespace CountersPlus.ConfigModels
 
         [UIValue(nameof(LabelAboveCount))]
         public virtual bool LabelAboveCount { get; set; } = false;
+        [UIValue(nameof(Bloom))]
+        public virtual bool Bloom { get; set; } = true;
         [UIValue(nameof(CustomLeftColors))]
         public virtual bool CustomLeftColors { get; set; } = true;
 

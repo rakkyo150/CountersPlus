@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using CountersPlus.ConfigModels;
+using CountersPlus.Counters.Bloom_Font_Asset_Makers;
 using TMPro;
 using UnityEngine;
 using Zenject;
@@ -72,6 +73,13 @@ namespace CountersPlus.Counters
                     fastestCounter = CanvasUtility.CreateTextFromSettings(Settings, new Vector3(0, -1.2f, 0));
                     fastestCounter.text = "0";
                     break;
+            }
+
+            if (Settings.Bloom)
+            {
+                averageCounter.font = BloomFontAssetMaker.instance.BloomFontAsset();
+                lAverageCounter.font = BloomFontAssetMaker.instance.BloomFontAsset();
+                fastestCounter.font = BloomFontAssetMaker.instance.BloomFontAsset();
             }
         }
 

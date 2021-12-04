@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using Zenject;
 using static CountersPlus.Utils.Accessors;
+using CountersPlus.Counters.Bloom_Font_Asset_Makers;
 
 namespace CountersPlus.Counters
 {
@@ -33,6 +34,10 @@ namespace CountersPlus.Counters
             relativeScoreText.color = Color.white;
             GameObject baseGameRank = ImmediateRankGO(ref coreGameHUD);
             rankText = baseGameRank.GetComponent<TextMeshProUGUI>();
+            if (Settings.Bloom)
+            {
+                rankText.font = BloomFontAssetMaker.instance.BloomFontAsset();
+            }
             rankText.color = Color.white;
 
             Canvas currentCanvas = CanvasUtility.GetCanvasFromID(Settings.CanvasID);

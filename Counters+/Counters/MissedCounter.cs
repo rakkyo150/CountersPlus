@@ -1,5 +1,6 @@
 ﻿using CountersPlus.ConfigModels;
 using CountersPlus.Counters.Interfaces;
+using CountersPlus.Counters.Bloom_Font_Asset_Makers;
 using TMPro;
 using UnityEngine;
 
@@ -13,6 +14,10 @@ namespace CountersPlus.Counters
         public override void CounterInit()
         {
             GenerateBasicText("Misses", out counter);
+            if (Settings.Bloom)
+            {
+                counter.font = BloomFontAssetMaker.instance.BloomFontAsset();
+            }
             counter.color = Settings.GetMissColorFromMiss(notesMissed);
         }
 

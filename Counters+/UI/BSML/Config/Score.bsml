@@ -2,6 +2,7 @@
 	<checkbox-setting text='Display Rank' apply-on-change='true' value='DisplayRank' hover-hint='Displays the rank as you progress in a song.'/>
 	<dropdown-list-setting text='Mode' apply-on-change='true' value='Mode' options='Modes' formatter='ModeFormat' hover-hint='How should this Counter display data?'/>
 	<list-setting text='Percentage Precision' apply-on-change='true' value='DecimalPrecision' options='DecimalPrecisions' hover-hint='How precise should the precentage be?'/>
+	<checkbox-setting text='Bloom' apply-on-change='true' value='Bloom'/>
 	<checkbox-setting text='Custom Score Colors' apply-on-change='true' value='CustomScoreColors' hover-hint='Colors your Score Counter.'/>
 	<increment-setting text='Score1 Threshold(highest%)' max='100' value='Score1Threshold' apply-on-change='true' increment='0.1'/>
 	<increment-setting text='Score2 Threshold(%)' max='100' value='Score2Threshold' apply-on-change='true' increment='0.1'/>

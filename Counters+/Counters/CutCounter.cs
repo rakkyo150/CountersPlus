@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
+using CountersPlus.Counters.Bloom_Font_Asset_Makers;
 using CountersPlus.ConfigModels;
 using CountersPlus.Counters.Interfaces;
 using TMPro;
@@ -30,10 +32,17 @@ namespace CountersPlus.Counters
 
             Vector3 leftOffset = Vector3.up * -0.2f;
             TextAlignmentOptions leftAlign = TextAlignmentOptions.Top;
+            
             if (Settings.SeparateSaberCounts)
             {
                 cutCounterRight = CanvasUtility.CreateTextFromSettings(Settings, new Vector3(0.2f, -0.2f, 0));
                 cutCounterRight.lineSpacing = -26;
+                if (Settings.Bloom)
+                {
+                    cutCounterRight.font = BloomFontAssetMaker.instance.BloomFontAsset();
+                    // なぜかずれるので
+                    cutCounterRight.lineSpacing = -40;
+                }
                 cutCounterRight.text = Settings.SeparateCutValues ? $"{defaultValue}\n{defaultValue}\n{defaultValue}" : $"{defaultValue}";
                 cutCounterRight.alignment = TextAlignmentOptions.TopLeft;
                 cutCounterRight.color = Color.white;
@@ -44,6 +53,11 @@ namespace CountersPlus.Counters
 
             cutCounterLeft = CanvasUtility.CreateTextFromSettings(Settings, leftOffset);
             cutCounterLeft.lineSpacing = -26;
+            if (Settings.Bloom)
+            {
+                cutCounterLeft.font = BloomFontAssetMaker.instance.BloomFontAsset();
+                cutCounterLeft.lineSpacing = -40;
+            }
             cutCounterLeft.text = Settings.SeparateCutValues ? $"{defaultValue}\n{defaultValue}\n{defaultValue}" : $"{defaultValue}";
             cutCounterLeft.alignment = leftAlign;
             cutCounterRight.color = Color.white;

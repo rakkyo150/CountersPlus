@@ -24,6 +24,8 @@ namespace CountersPlus.ConfigModels
         public virtual int DecimalPrecision { get; set; } = 2;
         [UIValue(nameof(DisplayRank))]
         public virtual bool DisplayRank { get; set; } = true;
+        [UIValue(nameof(Bloom))]
+        public virtual bool Bloom { get; set; } = true;
         [UIValue(nameof(CustomScoreColors))]
         public virtual bool CustomScoreColors { get; set; } = true;
         [UIValue(nameof(Score1Threshold))]

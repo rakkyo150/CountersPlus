@@ -18,6 +18,9 @@ namespace CountersPlus.ConfigModels
         [UIValue(nameof(CountBadCuts))]
         public virtual bool CountBadCuts { get; set; } = true;
 
+        [UIValue(nameof(Bloom))]
+        public virtual bool Bloom { get; set; } = true;
+
         [UIValue(nameof(CustomMissColors))]
         public virtual bool CustomMissColors { get; set; } = true;
 

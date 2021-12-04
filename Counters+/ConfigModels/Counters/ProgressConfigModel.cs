@@ -31,6 +31,9 @@ namespace CountersPlus.ConfigModels
         [UIAction(nameof(ModeFormat))]
         public string ModeFormat(ProgressMode pos) => ModeToNames[pos];
 
+        [UIValue(nameof(Bloom))]
+        public virtual bool Bloom { get; set; } = true;
+
         [UIValue(nameof(CustomProgressColors))]
         public virtual bool CustomProgressColors { get; set; } = true;
 

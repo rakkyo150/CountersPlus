@@ -189,6 +189,7 @@
     <Compile Include="ConfigModels\Counters\ScoreConfigModel.cs" />
     <Compile Include="ConfigModels\Counters\SpeedConfigModel.cs" />
     <Compile Include="ConfigModels\Counters\SpinometerConfigModel.cs" />
+    <Compile Include="Counters\Bloom Font Asset Makers\BloomFontAssetMaker.cs" />
     <Compile Include="Counters\Counter.cs" />
     <Compile Include="Counters\Custom\BasicCustomCounter.cs" />
     <Compile Include="Counters\Custom\CanvasCustomCounter.cs" />

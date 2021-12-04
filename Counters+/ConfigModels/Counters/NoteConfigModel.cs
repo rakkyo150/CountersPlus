@@ -20,6 +20,9 @@ namespace CountersPlus.ConfigModels
         [UIValue(nameof(DecimalPrecision))]
         public virtual int DecimalPrecision { get; set; } = 2;
 
+        [UIValue(nameof(Bloom))]
+        public virtual bool Bloom { get; set; } = true;
+
         [UIValue(nameof(CustomNoteColors))]
         public virtual bool CustomNoteColors { get; set; } = true;
 
