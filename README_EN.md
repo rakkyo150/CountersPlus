@@ -1,4 +1,4 @@
-## “ú–{Œê”ÅREADME‚Í[‚±‚¿‚ç](README.md)
+## æ—¥æœ¬èªç‰ˆREADMEã¯[ã“ã¡ã‚‰](README.md)
 
 # (Improved)CounterPlus
 
@@ -6,7 +6,8 @@
 
 ## Differences from the original version
 In ScoreCounter, ProgressCounter, CutCounter, NoteCounter, NoteLeftCounter, and SpeedCounter, it is now possible to add an arbitrary color for each arbitrary threshold. <br>
-For [CenterDistanceCounter](https://github.com/rakkyo150/CenterDistanceCounter), I created an interface that allows you to get more detailed information about the slashed notes.
+~~For [CenterDistanceCounter](https://github.com/rakkyo150/CenterDistanceCounter), I created an interface that allows you to get more detailed information about the slashed notes.<br>~~
+
 
 ## Settings
 Please note that only the parts that differ from the original version will be covered.

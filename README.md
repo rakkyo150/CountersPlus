@@ -1,154 +1,154 @@
 ## The English version of README is [here](README_EN.md)
 
-# CounterPlus‰ü—Ç”Å
+# CounterPlusæ”¹è‰¯ç‰ˆ
 
-![ƒTƒ“ƒvƒ‹](Images/Counters+.png)
+![ã‚µãƒ³ãƒ—ãƒ«](Images/Counters+.png)
 
-## ƒIƒŠƒWƒiƒ‹ƒo[ƒWƒ‡ƒ“‚Æ‚Ìˆá‚¢
-ScoreCounter,ProgressCounter,CutCounter,MissCounter,NoteCounter,NoteLeftCounter,SpeedCounter‚É‚¨‚¢‚ÄA”CˆÓ‚Ìè‡’l‚²‚Æ‚É”CˆÓ‚ÌF‚ğ•t‚¯‚é‚±‚Æ‚ª‚Å‚«‚é‚æ‚¤‚É‚µ‚Ü‚µ‚½B<br>
-[CenterDistanceCounter](https://github.com/rakkyo150/CenterDistanceCounter)‚Ì‚½‚ßAa‚ç‚ê‚½ƒm[ƒc‚Ìî•ñ‚ğ‚æ‚èÚ×‚É“¾‚é‚±‚Æ‚ª‚Å‚«‚éƒCƒ“ƒ^[ƒtƒFƒCƒX‚ğì‚è‚Ü‚µ‚½B
+## ã‚ªãƒªã‚¸ãƒŠãƒ«ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã¨ã®é•ã„
+ScoreCounter,ProgressCounter,CutCounter,MissCounter,NoteCounter,NoteLeftCounter,SpeedCounterã«ãŠã„ã¦ã€ä»»æ„ã®é–¾å€¤ã”ã¨ã«ä»»æ„ã®è‰²ã‚’ä»˜ã‘ã‚‹ã“ã¨ãŒã§ãã‚‹ã‚ˆã†ã«ã—ã¾ã—ãŸã€‚<br>
+[CenterDistanceCounter](https://github.com/rakkyo150/CenterDistanceCounter)ã®ãŸã‚ã€æ–¬ã‚‰ã‚ŒãŸãƒãƒ¼ãƒ„ã®æƒ…å ±ã‚’ã‚ˆã‚Šè©³ç´°ã«å¾—ã‚‹ã“ã¨ãŒã§ãã‚‹ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ã‚¤ã‚¹ã‚’ä½œã‚Šã¾ã—ãŸã€‚
 
-## İ’è€–Ú
-ƒIƒŠƒWƒiƒ‹ƒo[ƒWƒ‡ƒ“‚Æ‚ÍˆÙ‚È‚é•”•ª‚Ì‚İæ‚èã‚°‚é‚Ì‚ÅA‚²—¹³‚­‚¾‚³‚¢B
+## è¨­å®šé …ç›®
+ã‚ªãƒªã‚¸ãƒŠãƒ«ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã¨ã¯ç•°ãªã‚‹éƒ¨åˆ†ã®ã¿å–ã‚Šä¸Šã’ã‚‹ã®ã§ã€ã”äº†æ‰¿ãã ã•ã„ã€‚
 
 
 ### ScoreCounter
-è‡’l‚ÆF‚Í‚V’iŠK‚É•ª‚¯‚ç‚ê‚Ä‚¢‚Ü‚·B<br>
-|€–Ú|à–¾|
+é–¾å€¤ã¨è‰²ã¯ï¼—æ®µéšã«åˆ†ã‘ã‚‰ã‚Œã¦ã„ã¾ã™ã€‚<br>
+|é …ç›®|èª¬æ˜|
 |:---|:---|
-|`Bloom`|Œõ‚ç‚¹‚é‚©‚Ç‚¤‚©|
-|`Custom Score Colors`|F‚ğ‚Â‚¯‚é‚©‚Ç‚¤‚©|
-|`Score1 Threshold`|100%‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Score2 Threshold`|`Score1 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Score3 Threshold`|`Score2 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Score4 Threshold`|`Score3 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Score5 Threshold`|`Score4 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Score6 Threshold`|`Score5 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Score1 Color`|`Score1 Threshold``115‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Score2 Color`|`Score2 Threshold```Score1 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Score3 Color`|`Score3 Threshold```Score2 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Score4 Color`|`Score4 Threshold```Score3 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Score5 Color`|`Score5 Threshold```Score4 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Score6 Color`|`Score6 Threshold```Score5 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Score7 Color`|`Score6 Threshold`ˆÈ‰º‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
+|`Bloom`|å…‰ã‚‰ã›ã‚‹ã‹ã©ã†ã‹|
+|`Custom Score Colors`|è‰²ã‚’ã¤ã‘ã‚‹ã‹ã©ã†ã‹|
+|`Score1 Threshold`|100%ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Score2 Threshold`|`Score1 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Score3 Threshold`|`Score2 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Score4 Threshold`|`Score3 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Score5 Threshold`|`Score4 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Score6 Threshold`|`Score5 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Score1 Color`|`Score1 Threshold`ï½115ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Score2 Color`|`Score2 Threshold`ï½`Score1 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Score3 Color`|`Score3 Threshold`ï½`Score2 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Score4 Color`|`Score4 Threshold`ï½`Score3 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Score5 Color`|`Score5 Threshold`ï½`Score4 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Score6 Color`|`Score6 Threshold`ï½`Score5 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Score7 Color`|`Score6 Threshold`ä»¥ä¸‹ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
 
 ### ProgressCounter
-è‡’l‚ÆF‚Í‚V’iŠK‚É•ª‚¯‚ç‚ê‚Ä‚¢‚Ü‚·B
-|€–Ú|à–¾|
+é–¾å€¤ã¨è‰²ã¯ï¼—æ®µéšã«åˆ†ã‘ã‚‰ã‚Œã¦ã„ã¾ã™ã€‚
+|é …ç›®|èª¬æ˜|
 |:---|:---|
-|`Bloom`|Œõ‚ç‚¹‚é‚©‚Ç‚¤‚©|
-|`Custom Progress Colors`|F‚ğ‚Â‚¯‚é‚©‚Ç‚¤‚©|
-|`Progress1 Threshold`|‹ÈƒXƒ^[ƒg‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Progress2 Threshold`|`Progress1 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Progress3 Threshold`|`Progress2 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Progress4 Threshold`|`Progress3 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Progress5 Threshold`|`Progress4 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Progress6 Threshold`|`Progress5 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Progress1 Color`|‹ÈƒXƒ^[ƒg``Progress1 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Progress2 Color`|`Progress2 Threshold```Progress1 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Progress3 Color`|`Progress3 Threshold```Progress2 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Progress4 Color`|`Progress4 Threshold```Progress3 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Progress5 Color`|`Progress5 Threshold```Progress4 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Progress6 Color`|`Progress6 Threshold```Progress5 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Progress7 Color`|`Progress6 Threshold`ˆÈ‰º‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
+|`Bloom`|å…‰ã‚‰ã›ã‚‹ã‹ã©ã†ã‹|
+|`Custom Progress Colors`|è‰²ã‚’ã¤ã‘ã‚‹ã‹ã©ã†ã‹|
+|`Progress1 Threshold`|æ›²ã‚¹ã‚¿ãƒ¼ãƒˆã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Progress2 Threshold`|`Progress1 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Progress3 Threshold`|`Progress2 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Progress4 Threshold`|`Progress3 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Progress5 Threshold`|`Progress4 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Progress6 Threshold`|`Progress5 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Progress1 Color`|æ›²ã‚¹ã‚¿ãƒ¼ãƒˆï½`Progress1 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Progress2 Color`|`Progress2 Threshold`ï½`Progress1 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Progress3 Color`|`Progress3 Threshold`ï½`Progress2 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Progress4 Color`|`Progress4 Threshold`ï½`Progress3 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Progress5 Color`|`Progress5 Threshold`ï½`Progress4 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Progress6 Color`|`Progress6 Threshold`ï½`Progress5 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Progress7 Color`|`Progress6 Threshold`ä»¥ä¸‹ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
 
 ### CutCounter
-è‡’l‚ÆF‚Í‚V’iŠK‚É•ª‚¯‚ç‚ê‚Ä‚¢‚Ü‚·B
-|€–Ú|à–¾|
+é–¾å€¤ã¨è‰²ã¯ï¼—æ®µéšã«åˆ†ã‘ã‚‰ã‚Œã¦ã„ã¾ã™ã€‚
+|é …ç›®|èª¬æ˜|
 |:---|:---|
-|`Bloom`|Œõ‚ç‚¹‚é‚©‚Ç‚¤‚©|
-|`Custom Cut Colors`|F‚ğ‚Â‚¯‚é‚©‚Ç‚¤‚©|
-|`Cut1 Threshold`|115‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Cut2 Threshold`|`Cut1 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Cut3 Threshold`|`Cut2 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Cut4 Threshold`|`Cut3 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Cut5 Threshold`|`Cut4 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Cut6 Threshold`|`Cut5 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Cut1 Color`|`Cut1 Threshold``115‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Cut2 Color`|`Cut2 Threshold```Cut1 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Cut3 Color`|`Cut3 Threshold```Cut2 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Cut4 Color`|`Cut4 Threshold```Cut3 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Cut5 Color`|`Cut5 Threshold```Cut4 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Cut6 Color`|`Cut6 Threshold```Cut5 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Cut7 Color`|`Cut6 Threshold`ˆÈ‰º‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
+|`Bloom`|å…‰ã‚‰ã›ã‚‹ã‹ã©ã†ã‹|
+|`Custom Cut Colors`|è‰²ã‚’ã¤ã‘ã‚‹ã‹ã©ã†ã‹|
+|`Cut1 Threshold`|115ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Cut2 Threshold`|`Cut1 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Cut3 Threshold`|`Cut2 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Cut4 Threshold`|`Cut3 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Cut5 Threshold`|`Cut4 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Cut6 Threshold`|`Cut5 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Cut1 Color`|`Cut1 Threshold`ï½115ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Cut2 Color`|`Cut2 Threshold`ï½`Cut1 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Cut3 Color`|`Cut3 Threshold`ï½`Cut2 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Cut4 Color`|`Cut4 Threshold`ï½`Cut3 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Cut5 Color`|`Cut5 Threshold`ï½`Cut4 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Cut6 Color`|`Cut6 Threshold`ï½`Cut5 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Cut7 Color`|`Cut6 Threshold`ä»¥ä¸‹ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
 
 ### MissCounter
-è‡’l‚ÆF‚Í‚V’iŠK‚É•ª‚¯‚ç‚ê‚Ä‚¢‚Ü‚·B
-|€–Ú|à–¾|
+é–¾å€¤ã¨è‰²ã¯ï¼—æ®µéšã«åˆ†ã‘ã‚‰ã‚Œã¦ã„ã¾ã™ã€‚
+|é …ç›®|èª¬æ˜|
 |:---|:---|
-|`Bloom`|Œõ‚ç‚¹‚é‚©‚Ç‚¤‚©|
-|`Custom Miss Colors`|F‚ğ‚Â‚¯‚é‚©‚Ç‚¤‚©|
-|`Miss1 Threshold`|ƒ~ƒX‚O‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Miss2 Threshold`|`Miss1 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Miss3 Threshold`|`Miss2 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Miss4 Threshold`|`Miss3 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Miss5 Threshold`|`Miss4 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Miss6 Threshold`|`Miss5 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Miss1 Color`|ƒ~ƒX‚O``Miss1 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Miss2 Color`|`Miss2 Threshold```Miss1 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Miss3 Color`|`Miss3 Threshold```Miss2 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Miss4 Color`|`Miss4 Threshold```Miss3 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Miss5 Color`|`Miss5 Threshold```Miss4 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Miss6 Color`|`Miss6 Threshold```Miss5 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Miss7 Color`|`Miss6 Threshold`ˆÈ‰º‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
+|`Bloom`|å…‰ã‚‰ã›ã‚‹ã‹ã©ã†ã‹|
+|`Custom Miss Colors`|è‰²ã‚’ã¤ã‘ã‚‹ã‹ã©ã†ã‹|
+|`Miss1 Threshold`|ãƒŸã‚¹ï¼ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Miss2 Threshold`|`Miss1 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Miss3 Threshold`|`Miss2 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Miss4 Threshold`|`Miss3 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Miss5 Threshold`|`Miss4 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Miss6 Threshold`|`Miss5 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Miss1 Color`|ãƒŸã‚¹ï¼ï½`Miss1 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Miss2 Color`|`Miss2 Threshold`ï½`Miss1 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Miss3 Color`|`Miss3 Threshold`ï½`Miss2 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Miss4 Color`|`Miss4 Threshold`ï½`Miss3 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Miss5 Color`|`Miss5 Threshold`ï½`Miss4 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Miss6 Color`|`Miss6 Threshold`ï½`Miss5 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Miss7 Color`|`Miss6 Threshold`ä»¥ä¸‹ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
 
 ### NoteCounter
-è‡’l‚ÆF‚Í‚V’iŠK‚É•ª‚¯‚ç‚ê‚Ä‚¢‚Ü‚·B
-|€–Ú|à–¾|
+é–¾å€¤ã¨è‰²ã¯ï¼—æ®µéšã«åˆ†ã‘ã‚‰ã‚Œã¦ã„ã¾ã™ã€‚
+|é …ç›®|èª¬æ˜|
 |:---|:---|
-|`Bloom`|Œõ‚ç‚¹‚é‚©‚Ç‚¤‚©|
-|`Custom Note Colors`|F‚ğ‚Â‚¯‚é‚©‚Ç‚¤‚©|
-|`Note1 Threshold`|goodcut100“‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Note2 Threshold`|`Note1 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Note3 Threshold`|`Note2 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Note4 Threshold`|`Note3 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Note5 Threshold`|`Note4 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Note6 Threshold`|`Note5 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Note1 Color`|`Note1 Threshold``100%‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Note2 Color`|`Note2 Threshold```Note1 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Note3 Color`|`Note3 Threshold```Note2 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Note4 Color`|`Note4 Threshold```Note3 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Note5 Color`|`Note5 Threshold```Note4 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Note6 Color`|`Note6 Threshold```Note5 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Note7 Color`|`Note6 Threshold`ˆÈ‰º‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
+|`Bloom`|å…‰ã‚‰ã›ã‚‹ã‹ã©ã†ã‹|
+|`Custom Note Colors`|è‰²ã‚’ã¤ã‘ã‚‹ã‹ã©ã†ã‹|
+|`Note1 Threshold`|goodcut100ï¼…ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Note2 Threshold`|`Note1 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Note3 Threshold`|`Note2 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Note4 Threshold`|`Note3 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Note5 Threshold`|`Note4 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Note6 Threshold`|`Note5 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Note1 Color`|`Note1 Threshold`ï½100%ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Note2 Color`|`Note2 Threshold`ï½`Note1 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Note3 Color`|`Note3 Threshold`ï½`Note2 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Note4 Color`|`Note4 Threshold`ï½`Note3 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Note5 Color`|`Note5 Threshold`ï½`Note4 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Note6 Color`|`Note6 Threshold`ï½`Note5 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Note7 Color`|`Note6 Threshold`ä»¥ä¸‹ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
 
 ### NoteLeftCounter
-è‡’l‚Í‚V’iŠKAF‚Í‚W’iŠK‚É•ª‚¯‚ç‚ê‚Ä‚¢‚Ü‚·B
-|€–Ú|à–¾|
+é–¾å€¤ã¯ï¼—æ®µéšã€è‰²ã¯ï¼˜æ®µéšã«åˆ†ã‘ã‚‰ã‚Œã¦ã„ã¾ã™ã€‚
+|é …ç›®|èª¬æ˜|
 |:---|:---|
-|`Bloom`|Œõ‚ç‚¹‚é‚©‚Ç‚¤‚©|
-|`Custom Notes Left Colors`|F‚ğ‚Â‚¯‚é‚©‚Ç‚¤‚©|
-|`Left1 Threshold`|c‚èƒm[ƒc100%‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Left2 Threshold`|`Left1 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Left3 Threshold`|`Left2 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Left4 Threshold`|`Left3 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Left5 Threshold`|`Left4 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Left6 Threshold`|`Left5 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Left1 Color`|`Left1 Threshold``100%‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Left2 Color`|`Left2 Threshold```Left1 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Left3 Color`|`Left3 Threshold```Left2 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Left4 Color`|`Left4 Threshold```Left3 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Left5 Color`|`Left5 Threshold```Left4 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Left6 Color`|`Left6 Threshold```Left5 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Left7 Color`|`Left6 Threshold`ˆÈ‰º‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Note Last Color`|c‚èƒm[ƒc‚ª‚O‚Ì‚Æ‚«‚ÌF‚ğ‘I‘ğ|
+|`Bloom`|å…‰ã‚‰ã›ã‚‹ã‹ã©ã†ã‹|
+|`Custom Notes Left Colors`|è‰²ã‚’ã¤ã‘ã‚‹ã‹ã©ã†ã‹|
+|`Left1 Threshold`|æ®‹ã‚Šãƒãƒ¼ãƒ„100%ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Left2 Threshold`|`Left1 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Left3 Threshold`|`Left2 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Left4 Threshold`|`Left3 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Left5 Threshold`|`Left4 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Left6 Threshold`|`Left5 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Left1 Color`|`Left1 Threshold`ï½100%ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Left2 Color`|`Left2 Threshold`ï½`Left1 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Left3 Color`|`Left3 Threshold`ï½`Left2 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Left4 Color`|`Left4 Threshold`ï½`Left3 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Left5 Color`|`Left5 Threshold`ï½`Left4 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Left6 Color`|`Left6 Threshold`ï½`Left5 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Left7 Color`|`Left6 Threshold`ä»¥ä¸‹ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Note Last Color`|æ®‹ã‚Šãƒãƒ¼ãƒ„ãŒï¼ã®ã¨ãã®è‰²ã‚’é¸æŠ|
 
 ## SpeedCounter
-è‡’l‚ÆF‚Í‚V’iŠK‚É•ª‚¯‚ç‚ê‚Ä‚¢‚Ü‚·B
-|€–Ú|à–¾|
+é–¾å€¤ã¨è‰²ã¯ï¼—æ®µéšã«åˆ†ã‘ã‚‰ã‚Œã¦ã„ã¾ã™ã€‚
+|é …ç›®|èª¬æ˜|
 |:---|:---|
-|`Bloom`|Œõ‚ç‚¹‚é‚©‚Ç‚¤‚©|
-|`Custom Speed Colors`|F‚ğ‚Â‚¯‚é‚©‚Ç‚¤‚©|
-|`Speed1 Threshold`|Å‘¬‚Í‚Ç‚±‚©‚ç‚©|
-|`Speed2 Threshold`|`Speed1 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Speed3 Threshold`|`Speed2 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Speed4 Threshold`|`Speed3 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Speed5 Threshold`|`Speed4 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Speed6 Threshold`|`Speed5 Threshold`‚©‚ç‚Ç‚±‚Ü‚Å‚Ì”ÍˆÍ‚©|
-|`Speed1 Color`|`Speed1 Threshold`ˆÈã‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Speed2 Color`|`Speed2 Threshold```Speed1 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Speed3 Color`|`Speed3 Threshold```Speed2 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Speed4 Color`|`Speed4 Threshold```Speed3 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Speed5 Color`|`Speed5 Threshold```Speed4 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Speed6 Color`|`Speed6 Threshold```Speed5 Threshold`‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
-|`Speed7 Color`|`Speed6 Threshold`ˆÈ‰º‚É‚¨‚¯‚éF‚ğ‘I‘ğ|
+|`Bloom`|å…‰ã‚‰ã›ã‚‹ã‹ã©ã†ã‹|
+|`Custom Speed Colors`|è‰²ã‚’ã¤ã‘ã‚‹ã‹ã©ã†ã‹|
+|`Speed1 Threshold`|æœ€é€Ÿã¯ã©ã“ã‹ã‚‰ã‹|
+|`Speed2 Threshold`|`Speed1 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Speed3 Threshold`|`Speed2 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Speed4 Threshold`|`Speed3 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Speed5 Threshold`|`Speed4 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Speed6 Threshold`|`Speed5 Threshold`ã‹ã‚‰ã©ã“ã¾ã§ã®ç¯„å›²ã‹|
+|`Speed1 Color`|`Speed1 Threshold`ä»¥ä¸Šã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Speed2 Color`|`Speed2 Threshold`ï½`Speed1 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Speed3 Color`|`Speed3 Threshold`ï½`Speed2 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Speed4 Color`|`Speed4 Threshold`ï½`Speed3 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Speed5 Color`|`Speed5 Threshold`ï½`Speed4 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Speed6 Color`|`Speed6 Threshold`ï½`Speed5 Threshold`ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
+|`Speed7 Color`|`Speed6 Threshold`ä»¥ä¸‹ã«ãŠã‘ã‚‹è‰²ã‚’é¸æŠ|
