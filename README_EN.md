@@ -2,7 +2,7 @@
 
 # (Improved)CounterPlus
 
-![sample](Images/sample.png)
+![sample](Images/Counters+.png)
 
 ## Differences from the original version
 In ScoreCounter, ProgressCounter, CutCounter, NoteCounter, NoteLeftCounter, and SpeedCounter, it is now possible to add an arbitrary color for each arbitrary threshold. <br>
@@ -13,9 +13,9 @@ Please note that only the parts that differ from the original version will be co
 
 ### ScoreCounter
 Threshold and color are divided into 7 levels.<br>
-If you enable Colored HUD of NalulunaCounters, you can't use this.
 |Item|Description|
 |:---|:---|
+|`Bloom`|Whether to enable bloom or not|
 |`Custom Score Colors`|Whether to add colors or not|
 |`Score1 Threshold`|How far from 100%|
 |`Score2 Threshold`|How far from `Score1 Threshold`|.
@@ -35,6 +35,7 @@ If you enable Colored HUD of NalulunaCounters, you can't use this.
 Threshold and color are divided into 7 levels.
 |Item|Description|
 |:---|:---|
+|`Bloom`|Whether to enable bloom or not|
 |`Custom Progress Colors`|Whether to add colors or not|
 |`Progress1 Threshold`|How far from SongStart|
 |`Progress2 Threshold`|How far from `Progress1 Threshold`|.
@@ -54,6 +55,7 @@ Threshold and color are divided into 7 levels.
 Threshold and color are divided into 7 levels.
 |Item|Description|
 |:---|:---|
+|`Bloom`|Whether to enable bloom or not|
 |`Custom Cut Colors`|Whether to add colors or not|
 |`Cut1 Threshold`|How far from 115|
 |`Cut2 Threshold`|How far from `Cut1 Threshold`|.
@@ -73,6 +75,7 @@ Threshold and color are divided into 7 levels.
 Threshold and color are divided into 7 levels.
 |Item|Description|
 |:---|:---|
+|`Bloom`|Whether to enable bloom or not|
 |`Custom Miss Colors`|Whether to add colors or not|
 |`Miss1 Threshold`|How far from 0 miss|
 |`Miss2 Threshold`|How far from `Miss1 Threshold`|.
@@ -92,6 +95,7 @@ Threshold and color are divided into 7 levels.
 Threshold and color are divided into seven levels.
 |Item|Description|
 |:---|:---|
+|`Bloom`|Whether to enable bloom or not|
 |`Custom Note Colors`|Whether to add colors or not|
 |`Note1 Threshold`|How far from goodcut100%| 
 |`Note2 Threshold`|How far from `Note1 Threshold`|
@@ -111,6 +115,7 @@ Threshold and color are divided into seven levels.
 Threshold and color are divided into 7 levels.
 |Item|Description|
 |:---|:---|
+|`Bloom`|Whether to enable bloom or not|
 |`Custom Notes Left Colors`|Whether to add colors|
 |`Left1 Threshold`|How far from NotesLeft 100%| 
 |`Left2 Threshold`|How far from `Left3 Threshold`|
@@ -130,6 +135,7 @@ Threshold and color are divided into 7 levels.
 Threshold and color are divided into 7 levels.
 |Item|Description|
 |:---|:---|
+|`Bloom`|Whether to enable bloom or not|
 |`Custom Speed Colors`|Whether to add colors|
 |`Speed1 Threshold`|Where from the highest speed tire| 
 |`Speed2 Threshold`|How far from `Speed1 Threshold`|

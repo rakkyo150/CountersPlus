@@ -15,6 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Counters+", "Counters+\Coun
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{A3ECBEF7-CA40-4509-8628-4EFEE03AAD4D}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\デスクトップ\Counters+.png = ..\..\..\デスクトップ\Counters+.png
 		..\..\..\デスクトップ\sample.png = ..\..\..\デスクトップ\sample.png
 	EndProjectSection
 EndProject

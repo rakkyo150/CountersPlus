@@ -2,7 +2,7 @@
 
 # CounterPlus改良版
 
-![サンプル](Images/sample.png)
+![サンプル](Images/Counters+.png)
 
 ## オリジナルバージョンとの違い
 ScoreCounter,ProgressCounter,CutCounter,MissCounter,NoteCounter,NoteLeftCounter,SpeedCounterにおいて、任意の閾値ごとに任意の色を付けることができるようにしました。<br>
@@ -14,9 +14,9 @@ ScoreCounter,ProgressCounter,CutCounter,MissCounter,NoteCounter,NoteLeftCounter,
 
 ### ScoreCounter
 閾値と色は７段階に分けられています。<br>
-また、NalulunaCountersのColored HUDを有効にしている場合はそちらが優先されます。<br>
 |項目|説明|
 |:---|:---|
+|`Bloom`|光らせるかどうか|
 |`Custom Score Colors`|色をつけるかどうか|
 |`Score1 Threshold`|100%からどこまでの範囲か|
 |`Score2 Threshold`|`Score1 Threshold`からどこまでの範囲か|
@@ -36,6 +36,7 @@ ScoreCounter,ProgressCounter,CutCounter,MissCounter,NoteCounter,NoteLeftCounter,
 閾値と色は７段階に分けられています。
 |項目|説明|
 |:---|:---|
+|`Bloom`|光らせるかどうか|
 |`Custom Progress Colors`|色をつけるかどうか|
 |`Progress1 Threshold`|曲スタートからどこまでの範囲か|
 |`Progress2 Threshold`|`Progress1 Threshold`からどこまでの範囲か|
@@ -55,6 +56,7 @@ ScoreCounter,ProgressCounter,CutCounter,MissCounter,NoteCounter,NoteLeftCounter,
 閾値と色は７段階に分けられています。
 |項目|説明|
 |:---|:---|
+|`Bloom`|光らせるかどうか|
 |`Custom Cut Colors`|色をつけるかどうか|
 |`Cut1 Threshold`|115からどこまでの範囲か|
 |`Cut2 Threshold`|`Cut1 Threshold`からどこまでの範囲か|
@@ -74,6 +76,7 @@ ScoreCounter,ProgressCounter,CutCounter,MissCounter,NoteCounter,NoteLeftCounter,
 閾値と色は７段階に分けられています。
 |項目|説明|
 |:---|:---|
+|`Bloom`|光らせるかどうか|
 |`Custom Miss Colors`|色をつけるかどうか|
 |`Miss1 Threshold`|ミス０からどこまでの範囲か|
 |`Miss2 Threshold`|`Miss1 Threshold`からどこまでの範囲か|
@@ -93,6 +96,7 @@ ScoreCounter,ProgressCounter,CutCounter,MissCounter,NoteCounter,NoteLeftCounter,
 閾値と色は７段階に分けられています。
 |項目|説明|
 |:---|:---|
+|`Bloom`|光らせるかどうか|
 |`Custom Note Colors`|色をつけるかどうか|
 |`Note1 Threshold`|goodcut100％からどこまでの範囲か|
 |`Note2 Threshold`|`Note1 Threshold`からどこまでの範囲か|
@@ -112,6 +116,7 @@ ScoreCounter,ProgressCounter,CutCounter,MissCounter,NoteCounter,NoteLeftCounter,
 閾値は７段階、色は８段階に分けられています。
 |項目|説明|
 |:---|:---|
+|`Bloom`|光らせるかどうか|
 |`Custom Notes Left Colors`|色をつけるかどうか|
 |`Left1 Threshold`|残りノーツ100%からどこまでの範囲か|
 |`Left2 Threshold`|`Left1 Threshold`からどこまでの範囲か|
@@ -132,6 +137,7 @@ ScoreCounter,ProgressCounter,CutCounter,MissCounter,NoteCounter,NoteLeftCounter,
 閾値と色は７段階に分けられています。
 |項目|説明|
 |:---|:---|
+|`Bloom`|光らせるかどうか|
 |`Custom Speed Colors`|色をつけるかどうか|
 |`Speed1 Threshold`|最速はどこからか|
 |`Speed2 Threshold`|`Speed1 Threshold`からどこまでの範囲か|
