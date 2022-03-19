@@ -18,8 +18,10 @@ namespace CountersPlus.ConfigModels
      
         [UIValue(nameof(SeparateSaberCounts))]
         public virtual bool SeparateSaberCounts { get; set; } = false;
+
         [UIValue(nameof(SeparateCutValues))]
         public virtual bool SeparateCutValues { get; set; } = false;
+
         [UIValue(nameof(AveragePrecision))]
         public virtual int AveragePrecision { get; set; } = 1;
         [UIValue(nameof(Bloom))]
@@ -71,5 +73,11 @@ namespace CountersPlus.ConfigModels
             else if (score == 0) return Color.white;
             else return Cut7Color;
         }
+
+        [UIValue(nameof(IncludeArcs))]
+        public virtual bool IncludeArcs { get; set; } = false;
+
+        [UIValue(nameof(IncludeChains))]
+        public virtual bool IncludeChains { get; set; } = false;
     }
 }

@@ -26,6 +26,7 @@ namespace CountersPlus.UI.FlowCoordinators
         [Inject] private FadeInOutController fadeInOutController;
         [Inject] private VRInputModule vrInputModule;
         [Inject] private MenuShockwave menuShockwave;
+        [Inject] private PlayerDataModel playerDataModel;
 
         [Inject] private CountersPlusCreditsViewController credits;
         [Inject] private CountersPlusBlankViewController blank;
@@ -69,7 +70,7 @@ namespace CountersPlus.UI.FlowCoordinators
             persistentScenes.Add("MenuCore");
 
             var tutorialSceneSetup = MTHTutorialScenesSetup(ref menuTransitionsHelper); // Grab the scene transition setup data
-            tutorialSceneSetup.Init();
+            tutorialSceneSetup.Init(playerDataModel.playerData.playerSpecificSettings);
 
             menuEnvironmentManager.ShowEnvironmentType(MenuEnvironmentManager.MenuEnvironmentType.None);
 
