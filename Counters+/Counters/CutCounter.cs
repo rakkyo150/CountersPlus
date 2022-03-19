@@ -155,8 +155,8 @@ namespace CountersPlus.Counters
                 };
                 cutCounterLeft.text = $"{leftAverages[0]}\n{leftAverages[1]}\n{leftAverages[2]}";
                 cutCounterRight.text = $"{rightAverages[0]}\n{rightAverages[1]}\n{rightAverages[2]}";
-                cutCounterLeft.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresLeft[0] + totalScoresLeft[1] + totalScoresLeft[2], totalCutCountLeft)) : Color.white;
-                cutCounterRight.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresRight[0] + totalScoresRight[1] + totalScoresRight[2], totalCutCountRight)) : Color.white;
+                cutCounterLeft.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresLeft[0] + totalScoresLeft[1] + totalScoresLeft[2], cutCountLeft[0]+cutCountLeft[1]+cutCountLeft[2])) : Color.white;
+                cutCounterRight.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresRight[0] + totalScoresRight[1] + totalScoresRight[2], cutCountRight[0]+cutCountRight[1]+cutCountRight[2])) : Color.white;
             }
             else if (Settings.SeparateCutValues) // Before/After/Distance, for combined sabers
             {;
@@ -167,7 +167,8 @@ namespace CountersPlus.Counters
                     FormatLabel(totalScoresLeft[2] + totalScoresRight[2], cutCountLeft[2] + cutCountRight[2], shownDecimals)
                 };
                 cutCounterLeft.text = $"{cutValueAverages[0]}\n{cutValueAverages[1]}\n{cutValueAverages[2]}";
-                cutCounterLeft.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresLeft[0] + totalScoresRight[0] + totalScoresLeft[1] + totalScoresRight[1] + totalScoresLeft[2] + totalScoresRight[2], totalCutCount)) : Color.white;
+                cutCounterLeft.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresLeft[0] + totalScoresRight[0] + totalScoresLeft[1] + totalScoresRight[1] + totalScoresLeft[2] + totalScoresRight[2],
+                    cutCountLeft[0] + cutCountLeft[1] + cutCountLeft[2]+ cutCountRight[0] + cutCountRight[1] + cutCountRight[2])) : Color.white;
             }
             else if (Settings.SeparateSaberCounts) // Combined cut, for separate sabers
             {
@@ -181,8 +182,8 @@ namespace CountersPlus.Counters
 
                 cutCounterLeft.text = totalScoreLeft.ToString($"F{shownDecimals}", CultureInfo.InvariantCulture);
                 cutCounterRight.text = totalScoreRight.ToString($"F{shownDecimals}", CultureInfo.InvariantCulture);
-                cutCounterLeft.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresLeft[0] + totalScoresLeft[1] + totalScoresLeft[2], totalCutCountLeft)) : Color.white;
-                cutCounterRight.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresRight[0] + totalScoresRight[1] + totalScoresRight[2], totalCutCountRight)) : Color.white;
+                cutCounterLeft.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresLeft[0] + totalScoresLeft[1] + totalScoresLeft[2], cutCountLeft[0] + cutCountLeft[1] + cutCountLeft[2])) : Color.white;
+                cutCounterRight.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresRight[0] + totalScoresRight[1] + totalScoresRight[2], cutCountRight[0] + cutCountRight[1] + cutCountRight[2])) : Color.white;
             }
             else // Combined cut, for combined sabers
             {
@@ -190,7 +191,8 @@ namespace CountersPlus.Counters
                 var aggregateCuts = cutCountLeft.Sum() + cutCountRight.Sum();
 
                 cutCounterLeft.text = FormatLabel(aggregateScores, aggregateCuts, shownDecimals);
-                cutCounterLeft.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresLeft[0] + totalScoresRight[0] + totalScoresLeft[1] + totalScoresRight[1] + totalScoresLeft[2] + totalScoresRight[2], totalCutCountLeft + totalCutCountRight)) : Color.white;
+                cutCounterLeft.color = Settings.CustomCutColors ? Settings.GetCutColorFromCut(SafeDivideScore(totalScoresLeft[0] + totalScoresRight[0] + totalScoresLeft[1] + totalScoresRight[1] + totalScoresLeft[2] + totalScoresRight[2],
+                    cutCountLeft[0] + cutCountLeft[1] + cutCountLeft[2] + cutCountRight[0] + cutCountRight[1] + cutCountRight[2])) : Color.white;
             }
         }
 
