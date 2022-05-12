@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using CountersPlus.ConfigModels;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using CountersPlus.Counters.Bloom_Font_Asset_Makers;

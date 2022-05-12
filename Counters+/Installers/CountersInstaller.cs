@@ -4,7 +4,9 @@ using CountersPlus.Counters;
 using CountersPlus.Counters.Event_Broadcasters;
 using CountersPlus.Counters.Interfaces;
 using CountersPlus.Counters.NoteCountProcessors;
+using CountersPlus.Custom;
 using CountersPlus.Utils;
+using System;
 using UnityEngine;
 using Zenject;
 
@@ -12,15 +14,15 @@ namespace CountersPlus.Installers
 {
     class CountersInstaller : MonoInstaller
     {
-        private HUDConfigModel hudConfig;
-        private PlayerDataModel dataModel;
+        [Inject]
+        private readonly HUDConfigModel hudConfig;
+
+        [Inject]
+        private readonly PlayerDataModel dataModel;
 
         public override void InstallBindings()
         {
             MainConfigModel mainConfig = Plugin.MainConfig;
-
-            hudConfig = Container.Resolve<HUDConfigModel>();
-            dataModel = Container.Resolve<PlayerDataModel>();
 
             if (!mainConfig.Enabled) return;
 
@@ -51,18 +53,13 @@ namespace CountersPlus.Installers
             AddCounter<SpeedConfigModel, SpeedCounter>();
             AddCounter<SpinometerConfigModel, Spinometer>();
 
-
-            AddCounter<PBConfigModel, PBCounter>((settings) =>
-            {
+            AddCounter<PBConfigModel, PBCounter>((settings) => {
                 ScoreConfigModel scoreConfig = Container.Resolve<ScoreConfigModel>();
                 HUDCanvas canvasSettings = GrabCanvasForCounter(scoreConfig);
                 return scoreConfig.Enabled && settings.UnderScore && (dataModel.playerData.playerSpecificSettings.noTextsAndHuds ? canvasSettings.IgnoreNoTextAndHUDOption : true);
             });
 
-            foreach (Custom.CustomCounter customCounter in Plugin.LoadedCustomCounters.Values)
-            {
-                AddCustomCounter(customCounter, customCounter.CounterType);
-            }
+            InstallCustomCounters();
 
             if (mainConfig.AprilFoolsTomfoolery && mainConfig.IsAprilFools)
             {
@@ -74,15 +71,22 @@ namespace CountersPlus.Installers
             Container.BindInterfacesAndSelfTo<NoteEventBroadcaster>().AsSingle().NonLazy();
             Container.BindInterfacesAndSelfTo<ExpandedNoteEventBroadcaster>().AsSingle().NonLazy();
             Container.BindInterfacesAndSelfTo<ScoreEventBroadcaster>().AsSingle().NonLazy();
-            Plugin.Logger.Notice("Counters loaded!");
         }
 
-        private void AddCounter<T, R>() where T : ConfigModel where R : ICounter
+        protected virtual void InstallCustomCounters()
+        {
+            foreach (CustomCounter customCounter in Plugin.LoadedCustomCounters)
+            {
+                AddCustomCounter(customCounter, customCounter.CounterType);
+            }
+        }
+
+        protected void AddCounter<T, R>() where T : ConfigModel where R : ICounter
         {
             AddCounter<T, R>(_ => false);
         }
 
-        private void AddCounter<T, R>(Func<T, bool> additionalReasonToSpawn) where T : ConfigModel where R : ICounter
+        protected void AddCounter<T, R>(Func<T, bool> additionalReasonToSpawn) where T : ConfigModel where R : ICounter
         {
             T settings = Container.Resolve<T>();
 
@@ -103,27 +107,30 @@ namespace CountersPlus.Installers
             }
         }
 
-        private void AddCustomCounter(Custom.CustomCounter customCounter, Type counterType)
+        protected void AddCustomCounter(CustomCounter customCounter, Type counterType)
         {
-            ConfigModel settings = Container.TryResolveId<ConfigModel>(customCounter.Name);
+            ConfigModel settings;
 
-            HUDCanvas canvasSettings = GrabCanvasForCounter(settings);
-
-            if (!settings.Enabled || (!canvasSettings.IgnoreNoTextAndHUDOption && dataModel.playerData.playerSpecificSettings.noTextsAndHuds)) return;
-
-            Plugin.Logger.Debug($"Loading counter {customCounter.Name}...");
-
-            if (counterType.BaseType == typeof(MonoBehaviour))
+            if ((settings = Container.TryResolveId<ConfigModel>(customCounter.Name)) != null)
             {
-                Container.BindInterfacesAndSelfTo(counterType).FromNewComponentOnRoot().AsSingle().NonLazy();
-            }
-            else
-            {
-                Container.BindInterfacesAndSelfTo(counterType).AsSingle().NonLazy();
+                HUDCanvas canvasSettings = GrabCanvasForCounter(settings);
+
+                if (!settings.Enabled || (!canvasSettings.IgnoreNoTextAndHUDOption && dataModel.playerData.playerSpecificSettings.noTextsAndHuds)) return;
+
+                Plugin.Logger.Debug($"Loading counter {customCounter.Name}...");
+
+                if (counterType.BaseType == typeof(MonoBehaviour))
+                {
+                    Container.BindInterfacesAndSelfTo(counterType).FromNewComponentOnRoot().AsSingle().NonLazy();
+                }
+                else
+                {
+                    Container.BindInterfacesAndSelfTo(counterType).AsSingle().NonLazy();
+                }
             }
         }
 
-        private HUDCanvas GrabCanvasForCounter(ConfigModel settings)
+        protected HUDCanvas GrabCanvasForCounter(ConfigModel settings)
             => settings.CanvasID == -1 || settings.CanvasID >= hudConfig.OtherCanvasSettings.Count
             ? hudConfig.MainCanvasSettings
             : hudConfig.OtherCanvasSettings[settings.CanvasID];

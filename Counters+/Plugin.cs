@@ -18,7 +18,7 @@ namespace CountersPlus
         internal static Plugin Instance { get; private set; }
         internal static IPALogger Logger { get; private set; }
         internal static MainConfigModel MainConfig { get; private set; }
-        internal static Dictionary<Assembly, CustomCounter> LoadedCustomCounters { get; private set; } = new Dictionary<Assembly, CustomCounter>();
+        internal static List<CustomCounter> LoadedCustomCounters { get; private set; } = new List<CustomCounter>();
 
         private const string HARMONY_ID = "com.caeden117.countersplus";
         private HarmonyObj harmony;
@@ -34,11 +34,12 @@ namespace CountersPlus
             harmony = new HarmonyObj(HARMONY_ID);
 
             zenjector.Expose<CoreGameHUDController>("Environment");
+
             zenjector.Install<CoreInstaller>(Location.App);
             zenjector.Install<MenuUIInstaller>(Location.Menu);
 
-            // ....Yep, still do not have the time (nor interest) to get Counters+ working in Multiplayer.
-            zenjector.Install<CountersInstaller>(Location.StandardPlayer);
+            zenjector.Install<CountersInstaller>(Location.StandardPlayer | Location.CampaignPlayer);
+            zenjector.Install<MultiplayerCountersInstaller, MultiplayerLocalActivePlayerInstaller>();
         }
 
         [OnEnable]

@@ -27,8 +27,9 @@ namespace CountersPlus.Utils
         // our HUDConfigModel and the CoreGameHUDController.
         internal CanvasUtility(HUDConfigModel hudConfig,
             MainConfigModel mainConfig,
-            [Inject(Optional = true)] GameplayCoreSceneSetupData data,
-            [Inject(Optional = true)] CoreGameHUDController coreGameHUD)
+            [InjectOptional] GameplayCoreSceneSetupData data,
+            [InjectOptional] CoreGameHUDController coreGameHUD,
+            [InjectOptional] MultiplayerPositionHUDController multiplayerPositionHUD)
         {
             this.mainConfig = mainConfig;
             if (coreGameHUD != null)
@@ -41,9 +42,14 @@ namespace CountersPlus.Utils
 
                 energyCanvas = EnergyPanelGO(ref coreGameHUD).GetComponent<Canvas>();
 
-                // Hide Canvas and Multiplier if needed
+                // Hide base game elements if needed
                 if (mainConfig.HideCombo) HideBaseGameHUDElement<ComboUIController>(coreGameHUD);
                 if (mainConfig.HideMultiplier) HideBaseGameHUDElement<ScoreMultiplierUIController>(coreGameHUD);
+
+                if (mainConfig.HideMultiplayerRank && multiplayerPositionHUD != null)
+                {
+                    multiplayerPositionHUD.gameObject.SetActive(false);
+                }
             }
 
             RefreshAllCanvases(hudConfig, data, coreGameHUD);

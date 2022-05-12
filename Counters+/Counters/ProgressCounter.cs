@@ -17,7 +17,7 @@ namespace CountersPlus.Counters
         private readonly string multiplierImageSpriteName = "Circle";
 
         [Inject] private AudioTimeSyncController atsc;
-        [Inject(Optional = true)] private CoreGameHUDController coreGameHUD; // For getting multiplier image
+        [Inject] private CoreGameHUDController coreGameHUD; // For getting multiplier image
         [Inject] private GameplayCoreSceneSetupData gcssd; // I hope this works
 
         private TMP_Text timeText;
@@ -27,17 +27,30 @@ namespace CountersPlus.Counters
 
         public override void CounterInit()
         {
-            timeText = CanvasUtility.CreateTextFromSettings(Settings);
-            timeText.fontSize = 4;
-
             length = atsc.songLength;
             songBPM = gcssd.difficultyBeatmap.level.beatsPerMinute;
 
-            if (coreGameHUD != null)
+            timeText = CanvasUtility.CreateTextFromSettings(Settings);
+            timeText.fontSize = 4;
+
+            // Set default text, which is visible in Multiplayer
+            // Missing cases are covered by the default "_" case
+            timeText.text = Settings.Mode switch
             {
-                GameObject baseGameProgress = SongProgressPanelGO(ref coreGameHUD);
-                UnityEngine.Object.Destroy(baseGameProgress); // I'm sorry, little one.
-            }
+                ProgressMode.Percent when Settings.ProgressTimeLeft => "100%",
+                ProgressMode.Percent when !Settings.ProgressTimeLeft => "0%",
+
+                ProgressMode.TimeInBeats when Settings.ProgressTimeLeft
+                    => $"{Mathf.Round(songBPM / 60 * length / 0.25f) * 0.25f:F2}",
+                ProgressMode.TimeInBeats when !Settings.ProgressTimeLeft => "0.00",
+
+                _ when Settings.ProgressTimeLeft => $"{atsc.songLength:F2}",
+                _ when !Settings.ProgressTimeLeft => "0:00"
+            };
+
+            // I'm sorry, little one.
+            GameObject baseGameProgress = SongProgressPanelGO(ref coreGameHUD);
+            UnityEngine.Object.Destroy(baseGameProgress);
 
             if (Settings.Mode != ProgressMode.Percent)
             {
@@ -57,6 +70,9 @@ namespace CountersPlus.Counters
                     }
                     progressRing.rectTransform.anchoredPosition = timeText.rectTransform.anchoredPosition;
                     progressRing.transform.localScale = ringSize / 10;
+
+                    // Start progress ring at 100% or 0%, depending on how the ring will behave
+                    progressRing.fillAmount = (Settings.ProgressTimeLeft && Settings.IncludeRing) ? 1 : 0;
                 }
             }
         }

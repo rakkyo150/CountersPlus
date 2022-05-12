@@ -17,6 +17,6 @@
 	<color-setting text='Cut5 Color' apply-on-change='true' value='Cut5Color'/>
 	<color-setting text='Cut6 Color' apply-on-change='true' value='Cut6Color'/>
 	<color-setting text='Cut7 Color' apply-on-change='true' value='Cut7Color'/>
-	<checkbox-setting text='Include Arc Notes' apply-on-change='true' value='IncludeArcs' hover-hint='Include arc notes in average cut calculations. These may not have a pre-swing or a post-swing score.'/>
-	<checkbox-setting text='Include Chain Notes' apply-on-change='true' value='IncludeChains' hover-hint='Include chain notes in average cut calculations. Chains will always give 20 accuracy points.'/>
+  <checkbox-setting text='Include Arc Notes' apply-on-change='true' value='IncludeArcs' hover-hint='Include arc notes in average cut calculations. These may not have a pre-swing or a post-swing score.'/>
+  <checkbox-setting text='Include Chain Notes' apply-on-change='true' value='IncludeChains' hover-hint='Include chain notes in average cut calculations. Chains will always give 20 accuracy points.'/>
 </vertical>

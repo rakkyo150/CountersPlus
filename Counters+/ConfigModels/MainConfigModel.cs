@@ -21,6 +21,8 @@ namespace CountersPlus.ConfigModels
         public virtual bool HideCombo { get; set; } = false;
         [UIValue(nameof(HideMultiplier))]
         public virtual bool HideMultiplier { get; set; } = false;
+        [UIValue(nameof(HideMultiplayerRank))]
+        public virtual bool HideMultiplayerRank { get; set; } = false;
         [UIValue(nameof(ComboOffset))]
         public virtual float ComboOffset { get; set; } = 0.2f;
         [UIValue(nameof(MultiplierOffset))]
@@ -40,6 +42,7 @@ namespace CountersPlus.ConfigModels
         public virtual SpinometerConfigModel SpinometerConfig { get; set; } = new SpinometerConfigModel();
         public virtual NotesLeftConfigModel NotesLeftConfig { get; set; } = new NotesLeftConfigModel();
         public virtual FailConfigModel FailsConfig { get; set; } = new FailConfigModel();
+        public virtual MultiplayerRankConfigModel MultiplayerRankConfig { get; set; } = new MultiplayerRankConfigModel();
 
         [UseConverter]
         public virtual Dictionary<string, CustomConfigModel> CustomCounters { get; set; } = new Dictionary<string, CustomConfigModel>();
