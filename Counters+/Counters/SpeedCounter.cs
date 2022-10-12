@@ -75,12 +75,16 @@ namespace CountersPlus.Counters
                     break;
             }
 
-            if (Settings.Bloom)
-            {
+            if (!Settings.Bloom) return;
+            
+            if (averageCounter != null)
                 averageCounter.font = BloomFontAssetMaker.instance.BloomFontAsset();
+            
+            if(lAverageCounter != null)
                 lAverageCounter.font = BloomFontAssetMaker.instance.BloomFontAsset();
+
+            if(fastestCounter != null)
                 fastestCounter.font = BloomFontAssetMaker.instance.BloomFontAsset();
-            }
         }
 
         public void Tick()
