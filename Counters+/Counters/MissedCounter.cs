@@ -16,7 +16,7 @@ namespace CountersPlus.Counters
             GenerateBasicText("Misses", out counter);
             if (Settings.Bloom)
             {
-                counter.font = BloomFontAssetMaker.instance.BloomFontAsset();
+                counter.font = BloomFontAssetMaker.BloomFontAsset();
             }
             counter.color = Settings.GetMissColorFromMiss(notesMissed);
         }

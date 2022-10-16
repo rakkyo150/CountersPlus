@@ -8,10 +8,9 @@ using UnityEngine;
 
 namespace CountersPlus.Counters.Bloom_Font_Asset_Makers
 {
-    internal class BloomFontAssetMaker:PersistentSingleton<BloomFontAssetMaker>
+    internal static class BloomFontAssetMaker
     {
-        internal BloomFontAssetMaker Instance { get; set; }
-        public TMP_FontAsset BloomFontAsset()
+        public static TMP_FontAsset BloomFontAsset()
         {
             TMP_FontAsset customFontAsset = TMP_FontAsset.CreateFontAsset(Resources.FindObjectsOfTypeAll<TMP_FontAsset>().First(x => x.name.Contains(
                 "Teko-Medium SDF")).sourceFontFile);

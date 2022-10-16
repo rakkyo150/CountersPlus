@@ -78,13 +78,13 @@ namespace CountersPlus.Counters
             if (!Settings.Bloom) return;
             
             if (averageCounter != null)
-                averageCounter.font = BloomFontAssetMaker.instance.BloomFontAsset();
+                averageCounter.font = BloomFontAssetMaker.BloomFontAsset();
             
             if(lAverageCounter != null)
-                lAverageCounter.font = BloomFontAssetMaker.instance.BloomFontAsset();
+                lAverageCounter.font = BloomFontAssetMaker.BloomFontAsset();
 
             if(fastestCounter != null)
-                fastestCounter.font = BloomFontAssetMaker.instance.BloomFontAsset();
+                fastestCounter.font = BloomFontAssetMaker.BloomFontAsset();
         }
 
         public void Tick()

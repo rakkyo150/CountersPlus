@@ -17,7 +17,7 @@ namespace CountersPlus.Counters
             GenerateBasicText("Notes", out counter);
             if (Settings.Bloom)
             {
-                counter.font = BloomFontAssetMaker.instance.BloomFontAsset();
+                counter.font = BloomFontAssetMaker.BloomFontAsset();
             }
         }
 

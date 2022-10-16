@@ -42,7 +42,7 @@ namespace CountersPlus.Counters
                 cutCounterRight.lineSpacing = -26;
                 if (Settings.Bloom)
                 {
-                    cutCounterRight.font = BloomFontAssetMaker.instance.BloomFontAsset();
+                    cutCounterRight.font = BloomFontAssetMaker.BloomFontAsset();
                     // なぜかずれるので
                     cutCounterRight.lineSpacing = -40;
                 }
@@ -58,7 +58,7 @@ namespace CountersPlus.Counters
             cutCounterLeft.lineSpacing = -26;
             if (Settings.Bloom)
             {
-                cutCounterLeft.font = BloomFontAssetMaker.instance.BloomFontAsset();
+                cutCounterLeft.font = BloomFontAssetMaker.BloomFontAsset();
                 cutCounterLeft.lineSpacing = -40;
             }
             cutCounterLeft.text = Settings.SeparateCutValues ? $"{defaultValue}\n{defaultValue}\n{defaultValue}" : $"{defaultValue}";

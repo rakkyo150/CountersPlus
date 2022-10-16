@@ -41,7 +41,7 @@ namespace CountersPlus.Counters
             rankText = baseGameRank.GetComponent<TextMeshProUGUI>();
             if (Settings.Bloom)
             {
-                rankText.font = BloomFontAssetMaker.instance.BloomFontAsset();
+                rankText.font = BloomFontAssetMaker.BloomFontAsset();
             }
             rankText.enabled = true;
             rankText.color = Color.white;

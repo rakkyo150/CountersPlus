@@ -41,7 +41,7 @@ namespace CountersPlus.Counters
                 counter = CanvasUtility.CreateTextFromSettings(Settings);
                 if (Settings.Bloom)
                 {
-                    counter.font = BloomFontAssetMaker.instance.BloomFontAsset();
+                    counter.font = BloomFontAssetMaker.BloomFontAsset();
                 }
                 counter.text = $"Notes Remaining: {notesLeft}";
                 counter.fontSize = 2;
