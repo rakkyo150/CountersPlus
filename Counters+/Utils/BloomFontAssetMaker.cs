@@ -6,20 +6,18 @@ using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 
-namespace CountersPlus.Counters.Bloom_Font_Asset_Makers
+namespace CountersPlus.Utils.Bloom_Font_Asset_Makers
 {
     internal static class BloomFontAssetMaker
-    {
+    {   
+        private static TMP_FontAsset _bloomFontAsset = null;
+        
         public static TMP_FontAsset BloomFontAsset()
         {
-            TMP_FontAsset customFontAsset = TMP_FontAsset.CreateFontAsset(Resources.FindObjectsOfTypeAll<TMP_FontAsset>().First(x => x.name.Contains(
-                "Teko-Medium SDF")).sourceFontFile);
-            customFontAsset.name = "Teko-Medium SDF Bloom";
+            if (_bloomFontAsset != null) return _bloomFontAsset;
 
-            customFontAsset.material.shader = Resources.FindObjectsOfTypeAll<Shader>().First(x => x.name.Contains(
-                "TextMeshPro/Distance Field"));
-
-            return customFontAsset;
+            _bloomFontAsset = Resources.FindObjectsOfTypeAll<TMP_FontAsset>().FirstOrDefault(x => x.name == "Malgun Gothic");
+            return _bloomFontAsset;
         }
     }
 }

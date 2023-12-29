@@ -2,7 +2,7 @@
 using CountersPlus.ConfigModels;
 using CountersPlus.Counters.Interfaces;
 using CountersPlus.Counters.NoteCountProcessors;
-using CountersPlus.Counters.Bloom_Font_Asset_Makers;
+using CountersPlus.Utils.Bloom_Font_Asset_Makers;
 using TMPro;
 using UnityEngine;
 using Zenject;

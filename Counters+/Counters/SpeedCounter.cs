@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using CountersPlus.ConfigModels;
-using CountersPlus.Counters.Bloom_Font_Asset_Makers;
+using CountersPlus.Utils.Bloom_Font_Asset_Makers;
 using TMPro;
 using UnityEngine;
 using Zenject;

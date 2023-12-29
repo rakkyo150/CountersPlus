@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using Zenject;
 using static CountersPlus.Utils.Accessors;
-using CountersPlus.Counters.Bloom_Font_Asset_Makers;
+using CountersPlus.Utils.Bloom_Font_Asset_Makers;
 
 namespace CountersPlus.Counters
 {

@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using CountersPlus.Counters.Bloom_Font_Asset_Makers;
 using CountersPlus.ConfigModels;
 using CountersPlus.Counters.Interfaces;
 using TMPro;
 using UnityEngine;
 using Zenject;
+using CountersPlus.Utils.Bloom_Font_Asset_Makers;
 
 namespace CountersPlus.Counters
 {
