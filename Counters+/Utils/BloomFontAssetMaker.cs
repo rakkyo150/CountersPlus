@@ -16,7 +16,7 @@ namespace CountersPlus.Utils.Bloom_Font_Asset_Makers
         {
             if (_bloomFontAsset != null) return _bloomFontAsset;
 
-            _bloomFontAsset = Resources.FindObjectsOfTypeAll<TMP_FontAsset>().FirstOrDefault(x => x.name == "Malgun Gothic");
+            _bloomFontAsset = Resources.FindObjectsOfTypeAll<TMP_FontAsset>().FirstOrDefault(x => x.name == "Teko-Bold SDF");
             return _bloomFontAsset;
         }
     }
