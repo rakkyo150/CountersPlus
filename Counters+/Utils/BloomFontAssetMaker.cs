@@ -18,7 +18,7 @@ namespace CountersPlus.Utils.Bloom_Font_Asset_Makers
 
             var original = Resources.FindObjectsOfTypeAll<TMP_FontAsset>().FirstOrDefault(x => x.name == "Teko-Medium SDF");
             _bloomFontAsset = CopyFontAsset(original, "Teko-Medium SDF (Bloom)");
-            _bloomFontAsset.material.shader = Shader.Find("TextMeshPro/Distance Field");
+            _bloomFontAsset.material.shader = Resources.FindObjectsOfTypeAll<Shader>().First(x => x.name.Contains("TextMeshPro/Distance Field"));
             return _bloomFontAsset;
         }
 
