@@ -9,6 +9,7 @@ using HMUI;
 using UnityEngine;
 using VRUIControls;
 using Zenject;
+using BeatSaber.GameSettings;
 using static CountersPlus.Utils.Accessors;
 
 namespace CountersPlus.UI.FlowCoordinators
@@ -16,6 +17,7 @@ namespace CountersPlus.UI.FlowCoordinators
     public class CountersPlusSettingsFlowCoordinator : FlowCoordinator
     {
         public readonly Vector3 MAIN_SCREEN_OFFSET = new Vector3(0, -4, 0);
+        
 
         [Inject] public List<ConfigModel> AllConfigModels;
         [Inject] private CanvasUtility canvasUtility;
@@ -32,10 +34,9 @@ namespace CountersPlus.UI.FlowCoordinators
         [Inject] private CountersPlusBlankViewController blank;
         [Inject] private CountersPlusMainScreenNavigationController mainScreenNavigation;
         [Inject] private CountersPlusSettingSectionSelectionViewController settingsSelection;
-        [Inject] private SettingsFlowCoordinator settingsFlowCoordinator;
+        [Inject] private GraphicSettingsHandler graphicSettingsHandler;
         [Inject] private SongPreviewPlayer songPreviewPlayer;
 
-        private MainSettingsModelSO mainSettings;
         private HashSet<string> persistentScenes = new HashSet<string>();
         private bool hasTransitioned = false;
 
@@ -43,6 +44,7 @@ namespace CountersPlus.UI.FlowCoordinators
 
         protected override void DidActivate(bool firstActivation, bool addedToHierarchy, bool screenSystemEnabling)
         {
+            
             if (addedToHierarchy)
             {
                 showBackButton = true;
@@ -64,7 +66,6 @@ namespace CountersPlus.UI.FlowCoordinators
             hasTransitioned = true;
 
             persistentScenes = GSMPersistentScenes(ref gameScenesManager); // Get our hashset of persistent scenes
-            mainSettings = SFCMainSettingsModel(ref settingsFlowCoordinator);
 
             // Make sure our menu persists through the transition
             persistentScenes.Add("MenuCore");
@@ -106,7 +107,7 @@ namespace CountersPlus.UI.FlowCoordinators
                 // Gotta do some jank to re-activate the Root Container
                 menuEnvironmentManager.transform.root.gameObject.SetActive(true);
 
-                if (mainSettings.screenDisplacementEffectsEnabled)
+                if (graphicSettingsHandler.instance.customPreset.screenDisplacementEffects)
                 {
                     // Disable menu shockwave to forget about rendering order problems
                     menuShockwave.gameObject.SetActive(false);
@@ -178,7 +179,7 @@ namespace CountersPlus.UI.FlowCoordinators
             vrInputModule.gameObject.SetActive(true);
 
             // This took a long time to figure out.
-            if (mainSettings.screenDisplacementEffectsEnabled)
+            if (graphicSettingsHandler.instance.customPreset.screenDisplacementEffects)
             {
                 menuShockwave.gameObject.SetActive(true);
             }
