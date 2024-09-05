@@ -1,15 +1,15 @@
 ## The English version of README is [here](README_EN.md)
 
-# CounterPlus改良版
+# CounterPlus���ǔ�
 
-![サンプル](Images/Counters+.png)
+![�T���v��](Images/Counters+.png)
 
-## オリジナルバージョンとの違い
-ScoreCounter,ProgressCounter,CutCounter,MissCounter,NoteCounter,NoteLeftCounter,SpeedCounterにおいて、任意の閾値ごとに任意の色を付けることができるようにしました。<br>
-[CenterDistanceCounter](https://github.com/rakkyo150/CenterDistanceCounter)のため、斬られたノーツの情報をより詳細に得ることができるインターフェイスを作りました。
+## �I���W�i���o�[�W�����Ƃ̈Ⴂ
+ScoreCounter,ProgressCounter,CutCounter,MissCounter,NoteCounter,NoteLeftCounter,SpeedCounter�ɂ����āA�C�ӂ�臒l���ƂɔC�ӂ̐F��t���邱�Ƃ��ł���悤�ɂ��܂����B<br>
+[CenterDistanceCounter](https://github.com/rakkyo150/CenterDistanceCounter)�̂��߁A�a��ꂽ�m�[�c�̏�����ڍׂɓ��邱�Ƃ��ł���C���^�[�t�F�C�X����܂����B
 
-## 設定項目
-オリジナルバージョンとは異なる部分のみ取り上げるので、ご了承ください。
+## �ݒ荀��
+�I���W�i���o�[�W�����Ƃ͈قȂ镔���̂ݎ��グ��̂ŁA���������������B
 
 
 ### ScoreCounter
@@ -93,45 +93,45 @@ ScoreCounter,ProgressCounter,CutCounter,MissCounter,NoteCounter,NoteLeftCounter,
 |`Miss7 Color`|`Miss6 Threshold`以下における色を選択|
 
 ### NoteCounter
-閾値と色は７段階に分けられています。
-|項目|説明|
+臒l�ƐF�͂V�i�K�ɕ������Ă��܂��B
+|����|���|
 |:---|:---|
-|`Bloom`|光らせるかどうか|
-|`Custom Note Colors`|色をつけるかどうか|
-|`Note1 Threshold`|goodcut100％からどこまでの範囲か|
-|`Note2 Threshold`|`Note1 Threshold`からどこまでの範囲か|
-|`Note3 Threshold`|`Note2 Threshold`からどこまでの範囲か|
-|`Note4 Threshold`|`Note3 Threshold`からどこまでの範囲か|
-|`Note5 Threshold`|`Note4 Threshold`からどこまでの範囲か|
-|`Note6 Threshold`|`Note5 Threshold`からどこまでの範囲か|
-|`Note1 Color`|`Note1 Threshold`～100%における色を選択|
-|`Note2 Color`|`Note2 Threshold`～`Note1 Threshold`における色を選択|
-|`Note3 Color`|`Note3 Threshold`～`Note2 Threshold`における色を選択|
-|`Note4 Color`|`Note4 Threshold`～`Note3 Threshold`における色を選択|
-|`Note5 Color`|`Note5 Threshold`～`Note4 Threshold`における色を選択|
-|`Note6 Color`|`Note6 Threshold`～`Note5 Threshold`における色を選択|
-|`Note7 Color`|`Note6 Threshold`以下における色を選択|
+|`Bloom`|���点�邩�ǂ���|
+|`Custom Note Colors`|�F����邩�ǂ���|
+|`Note1 Threshold`|goodcut100������ǂ��܂ł͈̔͂�|
+|`Note2 Threshold`|`Note1 Threshold`����ǂ��܂ł͈̔͂�|
+|`Note3 Threshold`|`Note2 Threshold`����ǂ��܂ł͈̔͂�|
+|`Note4 Threshold`|`Note3 Threshold`����ǂ��܂ł͈̔͂�|
+|`Note5 Threshold`|`Note4 Threshold`����ǂ��܂ł͈̔͂�|
+|`Note6 Threshold`|`Note5 Threshold`����ǂ��܂ł͈̔͂�|
+|`Note1 Color`|`Note1 Threshold`�`100%�ɂ�����F��I��|
+|`Note2 Color`|`Note2 Threshold`�``Note1 Threshold`�ɂ�����F��I��|
+|`Note3 Color`|`Note3 Threshold`�``Note2 Threshold`�ɂ�����F��I��|
+|`Note4 Color`|`Note4 Threshold`�``Note3 Threshold`�ɂ�����F��I��|
+|`Note5 Color`|`Note5 Threshold`�``Note4 Threshold`�ɂ�����F��I��|
+|`Note6 Color`|`Note6 Threshold`�``Note5 Threshold`�ɂ�����F��I��|
+|`Note7 Color`|`Note6 Threshold`�ȉ��ɂ�����F��I��|
 
 ### NoteLeftCounter
-閾値は７段階、色は８段階に分けられています。
-|項目|説明|
+臒l�͂V�i�K�A�F�͂W�i�K�ɕ������Ă��܂��B
+|����|���|
 |:---|:---|
-|`Bloom`|光らせるかどうか|
-|`Custom Notes Left Colors`|色をつけるかどうか|
-|`Left1 Threshold`|残りノーツ100%からどこまでの範囲か|
-|`Left2 Threshold`|`Left1 Threshold`からどこまでの範囲か|
-|`Left3 Threshold`|`Left2 Threshold`からどこまでの範囲か|
-|`Left4 Threshold`|`Left3 Threshold`からどこまでの範囲か|
-|`Left5 Threshold`|`Left4 Threshold`からどこまでの範囲か|
-|`Left6 Threshold`|`Left5 Threshold`からどこまでの範囲か|
-|`Left1 Color`|`Left1 Threshold`～100%における色を選択|
-|`Left2 Color`|`Left2 Threshold`～`Left1 Threshold`における色を選択|
-|`Left3 Color`|`Left3 Threshold`～`Left2 Threshold`における色を選択|
-|`Left4 Color`|`Left4 Threshold`～`Left3 Threshold`における色を選択|
-|`Left5 Color`|`Left5 Threshold`～`Left4 Threshold`における色を選択|
-|`Left6 Color`|`Left6 Threshold`～`Left5 Threshold`における色を選択|
-|`Left7 Color`|`Left6 Threshold`以下における色を選択|
-|`Note Last Color`|残りノーツが０のときの色を選択|
+|`Bloom`|���点�邩�ǂ���|
+|`Custom Notes Left Colors`|�F����邩�ǂ���|
+|`Left1 Threshold`|�c��m�[�c100%����ǂ��܂ł͈̔͂�|
+|`Left2 Threshold`|`Left1 Threshold`����ǂ��܂ł͈̔͂�|
+|`Left3 Threshold`|`Left2 Threshold`����ǂ��܂ł͈̔͂�|
+|`Left4 Threshold`|`Left3 Threshold`����ǂ��܂ł͈̔͂�|
+|`Left5 Threshold`|`Left4 Threshold`����ǂ��܂ł͈̔͂�|
+|`Left6 Threshold`|`Left5 Threshold`����ǂ��܂ł͈̔͂�|
+|`Left1 Color`|`Left1 Threshold`�`100%�ɂ�����F��I��|
+|`Left2 Color`|`Left2 Threshold`�``Left1 Threshold`�ɂ�����F��I��|
+|`Left3 Color`|`Left3 Threshold`�``Left2 Threshold`�ɂ�����F��I��|
+|`Left4 Color`|`Left4 Threshold`�``Left3 Threshold`�ɂ�����F��I��|
+|`Left5 Color`|`Left5 Threshold`�``Left4 Threshold`�ɂ�����F��I��|
+|`Left6 Color`|`Left6 Threshold`�``Left5 Threshold`�ɂ�����F��I��|
+|`Left7 Color`|`Left6 Threshold`�ȉ��ɂ�����F��I��|
+|`Note Last Color`|�c��m�[�c���O�̂Ƃ��̐F��I��|
 
 ## SpeedCounter
 閾値と色は７段階に分けられています。
