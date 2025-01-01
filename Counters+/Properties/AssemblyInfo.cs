@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Counters+")]
-[assembly: AssemblyCopyright("Copyright © Caeden117 2018-2024")]
+[assembly: AssemblyCopyright("Copyright © Caeden117 2018-2024 rakkyo150 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: InternalsVisibleTo(IPA.Config.Stores.GeneratedStore.AssemblyVisibilityTarget)]
