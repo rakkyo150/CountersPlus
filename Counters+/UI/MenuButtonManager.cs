@@ -16,7 +16,7 @@ namespace CountersPlus.UI
         public void Initialize()
         {
             menuButton = new MenuButton("Counters+", "Configure Counters+ settings.", SummonFlowCoordinator);
-            MenuButtons.instance.RegisterButton(menuButton);
+            MenuButtons.Instance.RegisterButton(menuButton);
         }
 
         private void SummonFlowCoordinator()
@@ -29,7 +29,7 @@ namespace CountersPlus.UI
 
         public void Dispose()
         {
-            MenuButtons.instance.UnregisterButton(menuButton);
+            MenuButtons.Instance.UnregisterButton(menuButton);
         }
     }
 }
