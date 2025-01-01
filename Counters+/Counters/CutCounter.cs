@@ -8,6 +8,7 @@ using TMPro;
 using UnityEngine;
 using Zenject;
 using CountersPlus.Utils.Bloom_Font_Asset_Makers;
+using static ScoreModel;
 
 namespace CountersPlus.Counters
 {
@@ -103,30 +104,31 @@ namespace CountersPlus.Counters
                         cutCountForHand[1]++;
                         cutCountForHand[2]++;
                         break;
-                    case NoteData.ScoringType.SliderHead when Settings.IncludeArcs:
+                    case NoteData.ScoringType.ArcHead when Settings.IncludeArcs:
+                    case NoteData.ScoringType.ChainHead when Settings.IncludeArcs:
                         totalScoresForHand[0] += beforeCut;
                         totalScoresForHand[2] += cutDistance;
 
                         cutCountForHand[0]++;
                         cutCountForHand[2]++;
                         break;
-                    case NoteData.ScoringType.SliderTail when Settings.IncludeArcs:
+                    case NoteData.ScoringType.ArcTail when Settings.IncludeArcs:
                         totalScoresForHand[1] += afterCut;
                         totalScoresForHand[2] += cutDistance;
 
                         cutCountForHand[1]++;
                         cutCountForHand[2]++;
                         break;
-                    case NoteData.ScoringType.BurstSliderHead when Settings.IncludeChains:
-                        totalScoresForHand[0] += beforeCut;
+                    case NoteData.ScoringType.ArcHeadArcTail when Settings.IncludeArcs:
+                    case NoteData.ScoringType.ChainHeadArcTail when Settings.IncludeArcs:
                         totalScoresForHand[2] += cutDistance;
 
-                        cutCountForHand[0]++;
                         cutCountForHand[2]++;
                         break;
                     
                     // Chain links are not being tracked at all because they give a fixed 20 score for every hit.
-                    /*case NoteData.ScoringType.BurstSliderElement when Settings.IncludeChains:
+                    /*case NoteData.ScoringType.ChainLink when Settings.IncludeChains:
+                     case NoteData.ScoringType.ChainLinkArcHead when Settings.IncludeChains:
                         totalScoresForHand[2] += fixedScore;
                         cutCountForHand[2]++;
                         break;*/
